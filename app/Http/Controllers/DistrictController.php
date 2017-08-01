@@ -118,24 +118,24 @@ class DistrictController extends Controller
 
         $string=file_get_contents('D:\Alvaro\Documents\Absortio\Pagina web luisa\water\data\data.json');
         $json= json_decode($string,true);
-        return $json;
+        //return $json;
         // tengo los datos en json
 
 
-        //foreach ($json as $key => $value)
-        //{
-          //  District::create([
-            //  'name'=> $value['distrito'],
-              //'continuity'=>$value['continuidad'],
-              //'consumption'=>$value['consumo'],
-              //'micromedition'=>$value['micromedición'],
-            //  'facturation'=>$value['facturación'],
+        foreach ($json as $key => $value)
+        {
+            District::create([
+              'name'=> $value['distrito'],
+              'continuity'=>$value['continuidad'],
+              'consumption'=>$value['consumo'],
+              'micromedition'=>$value['micromedición'],
+              'facturation'=>$value['facturación'],
 
-            //]);
+            ]);
 
 
 
-        //}
+        }
 
         //return $json[0]["micromedición"];
     }
