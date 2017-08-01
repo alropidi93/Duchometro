@@ -1,0 +1,66 @@
+.data{
+	padding: 50px 20px;
+	font-size: 30px;
+	display: none;
+	color: #467fff;
+	/*text-align: center;*/
+}
+
+.data .container{
+	position: relative;
+	padding-top: 100px;
+}
+
+.data .cerrar{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.description{
+	font-size: 25px;
+}
+
+.description h2{
+	font-family: 'Avenir-Black';
+	font-size: 60px;
+	margin: 0px;
+	margin-bottom: -5px;
+	margin-top: 20px;
+}
+
+.data .bte{
+	font-size: 22px;
+	letter-spacing: 0.3px;
+	line-height: 1.2;
+}
+
+.data .bte span{
+	font-size: 30px;
+	font-family: 'Avenir-Black';
+}
+
+.te{
+	padding-top: 10px;
+}
+
+.titlep{
+	font-size: 30px;
+}
+
+.tright{
+	text-align: right;
+	padding-top: 30px;
+}
+
+.tright span{
+	font-size: 50px;
+	font-family: 'Avenir-Black';
+	line-height: 0;
+}
+
+.tright span sup{
+	font-size: 28px;
+}

@@ -1,0 +1,345 @@
+[
+  {
+    "distrito": "PUNTA NEGRA",
+    "continuidad": 12,
+    "consumo": 80.7,
+    "micromedición": "92.30%",
+    "facturación": 36.9
+  },
+  {
+    "distrito": "PACHACAMAC",
+    "continuidad": 22.5,
+    "consumo": 87.88,
+    "micromedición": "97.30%",
+    "facturación": 38.3
+  },
+  {
+    "distrito": "PUCUSANA",
+    "continuidad": 2,
+    "consumo": 88.28,
+    "micromedición": "89.20%",
+    "facturación": 40.8
+  },
+  {
+    "distrito": "MI PERU",
+    "continuidad": 16,
+    "consumo": 90.88,
+    "micromedición": "94.10%",
+    "facturación": 31.9
+  },
+  {
+    "distrito": "SAN BARTOLO",
+    "continuidad": 12,
+    "consumo": 91.03,
+    "micromedición": "93.80%",
+    "facturación": 54.5
+  },
+  {
+    "distrito": "SANTA ROSA",
+    "continuidad": 9.3,
+    "consumo": 98.25,
+    "micromedición": "65.90%",
+    "facturación": 42.3
+  },
+  {
+    "distrito": "VENTANILLA",
+    "continuidad": 17.2,
+    "consumo": 107.64,
+    "micromedición": "90.10%",
+    "facturación": 57.7
+  },
+  {
+    "distrito": "LURIGANCHO",
+    "continuidad": 22.5,
+    "consumo": 113.18,
+    "micromedición": "68.10%",
+    "facturación": 53.5
+  },
+  {
+    "distrito": "PUENTE PIEDRA",
+    "continuidad": 19.5,
+    "consumo": 115.65,
+    "micromedición": "77.60%",
+    "facturación": 47.7
+  },
+  {
+    "distrito": "CARABAYLLO",
+    "continuidad": 18,
+    "consumo": 116.76,
+    "micromedición": "64.40%",
+    "facturación": 44.1
+  },
+  {
+    "distrito": "ANCÓN",
+    "continuidad": 11.4,
+    "consumo": 117.63,
+    "micromedición": "91.30%",
+    "facturación": 119.6
+  },
+  {
+    "distrito": "PUNTA HERMOSA",
+    "continuidad": 9.3,
+    "consumo": 119.3,
+    "micromedición": "88.40%",
+    "facturación": 64
+  },
+  {
+    "distrito": "CHACLACAYO",
+    "continuidad": 15.5,
+    "consumo": 119.69,
+    "micromedición": "35.10%",
+    "facturación": 45.2
+  },
+  {
+    "distrito": "VILLA EL SALVADOR",
+    "continuidad": 24,
+    "consumo": 127.12,
+    "micromedición": "96.20%",
+    "facturación": 52.9
+  },
+  {
+    "distrito": "LURÍN",
+    "continuidad": 15.4,
+    "consumo": 133.43,
+    "micromedición": "95.70%",
+    "facturación": 73.2
+  },
+  {
+    "distrito": "CIENEGUILLA",
+    "continuidad": 14.2,
+    "consumo": 133.9,
+    "micromedición": "68.00%",
+    "facturación": 91.2
+  },
+  {
+    "distrito": "VILLA MARÍA DEL TRIUNFO",
+    "continuidad": 22.2,
+    "consumo": 135.67,
+    "micromedición": "96.70%",
+    "facturación": 59
+  },
+  {
+    "distrito": "SAN JUAN DE LURIGANCHO",
+    "continuidad": 20.8,
+    "consumo": 140.79,
+    "micromedición": "93.20%",
+    "facturación": 67
+  },
+  {
+    "distrito": "ATE-VITARTE",
+    "continuidad": 22.9,
+    "consumo": 164.93,
+    "micromedición": "87.40%",
+    "facturación": 80.1
+  },
+  {
+    "distrito": "INDEPENDENCIA",
+    "continuidad": 14.9,
+    "consumo": 147.02,
+    "micromedición": "42.70%",
+    "facturación": 80.3
+  },
+  {
+    "distrito": "CALLAO",
+    "continuidad": 21.7,
+    "consumo": 175.3,
+    "micromedición": "74.90%",
+    "facturación": 79.5
+  },
+  {
+    "distrito": "SAN JUAN DE MIRAFLORES",
+    "continuidad": 24,
+    "consumo": 179.61,
+    "micromedición": "97.60%",
+    "facturación": 80.1
+  },
+  {
+    "distrito": "LA PUNTA",
+    "continuidad": 24,
+    "consumo": 187.6,
+    "micromedición": "96.30%",
+    "facturación": 113.1
+  },
+  {
+    "distrito": "RIMAC",
+    "continuidad": 20.4,
+    "consumo": 191.09,
+    "micromedición": "76.00%",
+    "facturación": 83.3
+  },
+  {
+    "distrito": "CHORRILLOS",
+    "continuidad": 24,
+    "consumo": 202.11,
+    "micromedición": "96.30%",
+    "facturación": 119.4
+  },
+  {
+    "distrito": "COMAS",
+    "continuidad": 21.1,
+    "consumo": 202.53,
+    "micromedición": "77.90%",
+    "facturación": 72
+  },
+  {
+    "distrito": "EL CERCADO",
+    "continuidad": 24,
+    "consumo": 209.11,
+    "micromedición": "84.60%",
+    "facturación": 163.5
+  },
+  {
+    "distrito": "SAN MARTIN DE PORRES",
+    "continuidad": 24,
+    "consumo": 210.33,
+    "micromedición": "88.40%",
+    "facturación": 83
+  },
+  {
+    "distrito": "LA VICTORIA",
+    "continuidad": 22.5,
+    "consumo": 213.39,
+    "micromedición": "85.10%",
+    "facturación": 134.7
+  },
+  {
+    "distrito": "LOS OLIVOS",
+    "continuidad": 24,
+    "consumo": 223.39,
+    "micromedición": "92.50%",
+    "facturación": 95.1
+  },
+  {
+    "distrito": "LA PERLA",
+    "continuidad": 24,
+    "consumo": 223.59,
+    "micromedición": "95.20%",
+    "facturación": 88.6
+  },
+  {
+    "distrito": "BREÑA",
+    "continuidad": 24,
+    "consumo": 226.86,
+    "micromedición": "89.80%",
+    "facturación": 125
+  },
+  {
+    "distrito": "BARRANCO",
+    "continuidad": 24,
+    "consumo": 226.97,
+    "micromedición": "95.60%",
+    "facturación": 133.2
+  },
+  {
+    "distrito": "EL AGUSTINO",
+    "continuidad": 21.3,
+    "consumo": 228.4,
+    "micromedición": "77.20%",
+    "facturación": 85.3
+  },
+  {
+    "distrito": "BELLAVISTA",
+    "continuidad": 24,
+    "consumo": 235.08,
+    "micromedición": "93.50%",
+    "facturación": 121.3
+  },
+  {
+    "distrito": "CARMEN DE LA LEGUA",
+    "continuidad": 24,
+    "consumo": 238.93,
+    "micromedición": "65.20%",
+    "facturación": 158
+  },
+  {
+    "distrito": "PUEBLO LIBRE",
+    "continuidad": 24,
+    "consumo": 243.31,
+    "micromedición": "89.90%",
+    "facturación": 134.9
+  },
+  {
+    "distrito": "LINCE",
+    "continuidad": 24,
+    "consumo": 244.82,
+    "micromedición": "95.60%",
+    "facturación": 147.3
+  },
+  {
+    "distrito": "LA MOLINA",
+    "continuidad": 23.6,
+    "consumo": 252.75,
+    "micromedición": "92.40%",
+    "facturación": 190.6
+  },
+  {
+    "distrito": "SAN BORJA",
+    "continuidad": 24,
+    "consumo": 256.68,
+    "micromedición": "97.10%",
+    "facturación": 180.4
+  },
+  {
+    "distrito": "SAN MIGUEL",
+    "continuidad": 24,
+    "consumo": 256.71,
+    "micromedición": "96.10%",
+    "facturación": 140.7
+  },
+  {
+    "distrito": "SANTA ANITA",
+    "continuidad": 21.4,
+    "consumo": 262.01,
+    "micromedición": "68.30%",
+    "facturación": 113
+  },
+  {
+    "distrito": "MAGDALENA DEL MAR",
+    "continuidad": 24,
+    "consumo": 267.05,
+    "micromedición": "93.90%",
+    "facturación": 165
+  },
+  {
+    "distrito": "JESUS MARIA",
+    "continuidad": 24,
+    "consumo": 268.48,
+    "micromedición": "64.40%",
+    "facturación": 230.2
+  },
+  {
+    "distrito": "SURCO",
+    "continuidad": 24,
+    "consumo": 281.37,
+    "micromedición": "96.70%",
+    "facturación": 168.1
+  },
+  {
+    "distrito": "SURQUILLO",
+    "continuidad": 24,
+    "consumo": 301.45,
+    "micromedición": "96.70%",
+    "facturación": 157.4
+  },
+  {
+    "distrito": "SAN LUIS",
+    "continuidad": 24,
+    "consumo": 327.8,
+    "micromedición": "92.10%",
+    "facturación": 179.9
+  },
+  {
+    "distrito": "SAN ISIDRO",
+    "continuidad": 24,
+    "consumo": 366.7,
+    "micromedición": "95.20%",
+    "facturación": 371.3
+  },
+  {
+    "distrito": "MIRAFLORES",
+    "continuidad": 24,
+    "consumo": 379.22,
+    "micromedición": "95.30%",
+    "facturación": 300.8
+  }
+]
