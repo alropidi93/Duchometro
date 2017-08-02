@@ -28,10 +28,10 @@ body {
 }
 
 .cover{
-	padding:300px 0px;
+	padding:250px 0px 0px 0px;
 	width: 100%;
 	background: white;
-	background: url('../img/background.jpg') center bottom;
+	/* background: url('../img/background.jpg') center bottom;*/ /* 1em = 10px */
 	background-size: cover;
 	position: relative;
 	height: 100%;

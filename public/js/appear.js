@@ -41,6 +41,8 @@ $('.calcular').click(function(){
 	       error: function() {
 					 console.log('Error');
 
+					 //mandar un mensaje diciendo que hubo un error con el servidor
+
 
 
 	          }
@@ -58,10 +60,10 @@ $('.calcular').click(function(){
 
 
 	$('.animbot, .animtop').animate({
-		height: '100%'
-	}, 'slow', function(){
+		height: '10%'
+	}, 'fast', function(){
 		//$('.cover').hide();
-		$('.data').slideDown('slow');
+		$('.data').slideDown('fast');
 	});
 
 

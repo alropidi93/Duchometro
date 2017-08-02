@@ -65,29 +65,32 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="data">
-	<div class="container">
-		<i class="fa fa-times cerrar" aria-hidden="true"></i>
-		<div class="row description">
-			<div class="col-md-3">
-				<img src="img/drop.png">
-				<h2>150</h2>
-				<p class="bte">litros de agua en<br><span id="min"></span><br>de ducha</p>
-			</div>
-			<div class="col-md-5">
-				<img src="img/drop.png"><img src="img/drop.png"><img src="img/drop.png"><br><br>
-				Tu ducha excedió el consumo diario de agua en estos distritos
-			</div>
-			<div class="col-md-4 tright">
-				Haz utilizado el <span>28<sup>%</sup></span> de lo que gasta una persona en <div id="district"></div> al día (366.7 lt)
-			</div>
+	<div class="data">
+		<div class="container">
+			<i class="fa fa-times cerrar" aria-hidden="true"></i>
+			<div class="row description">
+				<div class="col-md-3">
+					<img src="img/drop.png">
+					<h2>150</h2>
+					<p class="bte">litros de agua en<br><span id="min"></span><br>de ducha</p>
+				</div>
+				<div class="col-md-5">
+					<img src="img/drop.png"><img src="img/drop.png"><img src="img/drop.png"><br><br>
+					Tu ducha excedió el consumo diario de agua en estos distritos
+				</div>
+				<div class="col-md-4 tright">
+					Haz utilizado el <span>28<sup>%</sup></span> de lo que gasta una persona en <div id="district"></div> al día (366.7 lt)
+				</div>
 
 
+			</div>
 		</div>
 	</div>
+
 </div>
+
+
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
