@@ -15,6 +15,3 @@ Route::get('/', 'DistrictController@index');
 
 Route::get('datos', 'DistrictController@insert_Data');
 Route::get('reporte', 'DistrictController@get_Report');
-Route::get('prueba',function(){
-  return "Hola prueba";
-});
