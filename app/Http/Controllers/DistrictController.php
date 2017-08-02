@@ -105,10 +105,10 @@ class DistrictController extends Controller
         $consume=$district['consumption'];
         $liters=$minutes*7;
         if ($liters>$consume) {
-          $message= "Tu ducha excedió el consumo diario de agua en estos distritos";
+          $message= "Tu ducha excedió el consumo diario de agua en este distritos";
         }
         else{
-          $message= "Tu ducha no excedió el consumo diario de agua en estos distritos";
+          $message= "Tu ducha no excedió el consumo diario de agua en este distritos";
         }
 
         $porcentaje= round(($liters/$consume)*100);
