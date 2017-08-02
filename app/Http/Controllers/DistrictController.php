@@ -102,13 +102,29 @@ class DistrictController extends Controller
 
         $district= District::find($id);
 
+        $consume=$district['consumption'];
+        $liters=$minutes*7;
+        if ($liters>$consume) {
+          $message= "Tu ducha excedió el consumo diario de agua en estos distritos";
+        }
+        else{
+          $message= "Tu ducha no excedió el consumo diario de agua en estos distritos";
+        }
+
+        $porcentaje= round(($liters/$consume)*100);
+
+
         $data['min']=$minutes;
-        $data['litros']=$minutes*7;
+        $data['litros']=$liters;
+        $data['mensaje']=$message;
+        $data['porcentaje']=$porcentaje;
         $data['nombre']=$district['name'];
-        $data['continuidad']=$district['continuity'];
-        $data['consumo']=$district['consumption'];
-        $data['micromedicion']=$district['micromedition'];
-        $data['facturacion']=$district['facturation'];
+        $data['consumo']=$consume;
+
+        //$data['continuidad']=$district['continuity'];
+
+        //$data['micromedicion']=$district['micromedition'];
+        //$data['facturacion']=$district['facturation'];
 
         return $data;
 

@@ -37,6 +37,8 @@ $('.calcular').click(function(){
 					 document.getElementById("district").innerHTML=data['nombre'];
 					 document.getElementById("consume").innerHTML=data['consumo'];
 					 document.getElementById("liter").innerHTML=data['litros'];
+					 document.getElementById("porc").innerHTML=data['porcentaje'];
+					 document.getElementById("mess").innerHTML=data['mensaje'];
 	       },
 
 	       error: function() {

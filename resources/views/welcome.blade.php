@@ -77,10 +77,10 @@
 				</div>
 				<div class="col-md-5">
 					<img src="img/drop.png"><img src="img/drop.png"><img src="img/drop.png"><br><br>
-					Tu ducha excedió el consumo diario de agua en estos distritos
+					<b id="mess"></b>
 				</div>
 				<div class="col-md-4 tright">
-					Haz utilizado el <span >28<sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
+					Has utilizado el <span ><b id="porc"></b><sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
 				</div>
 
 
