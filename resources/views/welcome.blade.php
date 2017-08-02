@@ -25,7 +25,7 @@
 			<div class="col-md-7 right">
 				<h1>
 					<img src="img/shower.png">
-					<span id="temperature"><i class="fa fa-tint" aria-hidden="true"></i>078<span>Lts</span></span>
+					<span id="temperature"><i class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
 					Duchómetro limeño<br>
 					<small>¿A cuánto equivale tu ducha?</small>
 				</h1>
@@ -58,7 +58,7 @@
 						¿Cuántos minutos demoras en bañarte?
 					</p>
 					<div class="field field2" d-hide="1">
-						<input id="minutes" type="number"  placeholder="Ej: 15">
+						<input id="minutes" type="number"   placeholder="Ej: 15">
 					</div>
 				</div>
 				<button class="calcular">
