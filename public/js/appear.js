@@ -33,7 +33,7 @@ $('.calcular').click(function(){
 	       },
 	       success: function(data){
 					 console.log(data['nombre']);
-					 document.getElementById("min").innerHTML = data['min'] + " minutos";
+					 document.getElementById("min").innerHTML = data['min'] + " minutos.";
 					 document.getElementById("district").innerHTML=data['nombre'];
 
 	       },
