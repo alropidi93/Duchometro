@@ -66,13 +66,13 @@
 		</div>
 	</div>
 
-	<div class="data">
+	<div class="data" id ="data_div">
 		<div class="container">
 			<i class="fa fa-times cerrar" aria-hidden="true"></i>
 			<div class="row description">
 				<div class="col-md-3">
 					<img src="img/drop.png">
-					<h2>150</h2>
+					<h2><b id="liter"></b></h2>
 					<p class="bte">litros de agua en<br><span id="min"></span><br>de ducha</p>
 				</div>
 				<div class="col-md-5">
@@ -80,7 +80,7 @@
 					Tu ducha excedió el consumo diario de agua en estos distritos
 				</div>
 				<div class="col-md-4 tright">
-					Haz utilizado el <span>28<sup>%</sup></span> de lo que gasta una persona en <div id="district"></div> al día (366.7 lt)
+					Haz utilizado el <span >28<sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
 				</div>
 
 

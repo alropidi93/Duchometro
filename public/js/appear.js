@@ -35,7 +35,8 @@ $('.calcular').click(function(){
 					 console.log(data['nombre']);
 					 document.getElementById("min").innerHTML = data['min'] + " minutos";
 					 document.getElementById("district").innerHTML=data['nombre'];
-
+					 document.getElementById("consume").innerHTML=data['consumo'];
+					 document.getElementById("liter").innerHTML=data['litros'];
 	       },
 
 	       error: function() {
@@ -49,21 +50,12 @@ $('.calcular').click(function(){
 	       });
 
 
-
-
-
-
-
-
-
-
-
-
 	$('.animbot, .animtop').animate({
 		height: '10%'
-	}, 'fast', function(){
+	}, 'slow', function(){
 		//$('.cover').hide();
-		$('.data').slideDown('fast');
+		$('.data').slideDown('slow',function(){$('#data_div').focus();});
+
 	});
 
 

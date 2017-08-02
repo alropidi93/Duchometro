@@ -98,10 +98,12 @@ class DistrictController extends Controller
         //'facturacion' => $district['facturation'],'min'=>$min));
 
         $id=$request['district'];
+        $minutes=$request['minutes'];
 
         $district= District::find($id);
 
-        $data['min']=$request['minutes'];
+        $data['min']=$minutes;
+        $data['litros']=$minutes*7;
         $data['nombre']=$district['name'];
         $data['continuidad']=$district['continuity'];
         $data['consumo']=$district['consumption'];
