@@ -38,6 +38,7 @@
 
 					<div class="field field1" d-hide="2">
 						<span class="sel" id="distrito">Seleccionar</span>
+
 						<i class="fa fa-chevron-down" aria-hidden="true"></i>
 
 						<div class="options">
@@ -50,11 +51,14 @@
 						</div>
 
 					</div>
+						<br>
+						<strong id="field_required"></strong>
+
 					<p class="question">
 						¿Cuántos minutos demoras en bañarte?
 					</p>
 					<div class="field field2" d-hide="1">
-						<input id="minutes" type="number"  min="1" max="1000" onkeydown="return false" placeholder="Ejemplo: 15">
+						<input id="minutes" type="number"  placeholder="Ej: 15">
 					</div>
 				</div>
 				<button class="calcular">

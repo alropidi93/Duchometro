@@ -18,7 +18,12 @@
 	src: url(fonts/avenir/AvenirLTStd-Black.otf);
 }
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -106,6 +111,7 @@ h1{
 	font-family: 'Avenir-Heavy';
 	/*color: #467FFF;*/
 	/*font-family: 'Avenir-Light';*/
+	margin-top:30px;
 	margin-bottom: 5px;
 	text-transform: uppercase;
 }
@@ -120,7 +126,7 @@ h1{
 	text-align: left;
 	position: relative;
 	padding: 0px 5px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 }
 
 .field i{
