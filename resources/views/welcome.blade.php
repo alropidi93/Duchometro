@@ -26,7 +26,7 @@
 				<h1>
 					<img src="img/shower.png">
 					<span id="temperature"><i class="fa fa-tint" aria-hidden="true"></i>078<span>Lts</span></span>
-					Duchómetro Limeño<br>
+					Duchómetro limeño<br>
 					<small>¿A cuánto equivale tu ducha?</small>
 				</h1>
 			</div>
