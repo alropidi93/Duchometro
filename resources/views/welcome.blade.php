@@ -68,28 +68,51 @@
 				<p class="clari">* <span>No</span> guardamos su información</p>
 			</div>
 		</div>
+		<br><br><br>
+
 	</div>
+
+
+	<div  class="arrow" style="display:none; vertical-align:top; text-align:center">
+	<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 50px; padding-left: 10px"></a>
+	</div>
+
 
 	<div class="data" id ="data_div">
 		<div class="container">
 			<i class="fa fa-times cerrar" aria-hidden="true"></i>
 			<div class="row description">
 				<div class="col-md-3">
-					<img src="img/drop.png">
-					<h2><b id="liter"></b></h2>
-					<p class="bte">litros de agua en<br><span id="min"></span><br>de ducha</p>
+					Has utilizado el <span ><b id="porc"></b><sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
+
 				</div>
 				<div class="col-md-5">
 					<img src="img/drop.png"><img src="img/drop.png"><img src="img/drop.png"><br><br>
 					<b id="mess"></b>
 				</div>
-				<div class="col-md-4 tright">
-					Has utilizado el <span ><b id="porc"></b><sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
-				</div>
 
 
 			</div>
 		</div>
+
+
+		<svg class="chart" width="1000" height="{{count($districts)*20}}">
+
+			@foreach ($districts as $key=>$d)
+
+		  <g transform="translate(250,{{$key*20}})">
+				<text x=-150 y="15" fill="red" dy=".35em" style="text-anchor: start;">{{$d->name}} </text>
+		    <rect width="{{$d->continuity*25}}" height="19"></rect>
+				<text x="{{$d->continuity*25+10}}" y="15" fill="red" dy=".35em" style="text-anchor: start;">{{$d->continuity}} horas</text>
+
+		  </g>
+
+		  @endforeach
+
+		</svg>
+
+
+
 	</div>
 
 </div>

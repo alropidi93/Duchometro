@@ -31,6 +31,22 @@ body {
 	font-family: 'Avenir-Medium';
 
 }
+.chart rect {
+  fill: #467fff;
+}
+
+.chart text {
+  fill: black;
+  font: 10px sans-serif;
+  text-anchor: start;
+}
+
+.inl {
+    display: inline;
+
+
+
+}
 
 .cover{
 	padding:250px 0px 0px 0px;

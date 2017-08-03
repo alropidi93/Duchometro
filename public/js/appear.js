@@ -88,12 +88,22 @@ $('.calcular').click(function(){
 							 }
 
 
-							 document.getElementById("min").innerHTML = data['min'] + " minutos";
+							 //document.getElementById("min").innerHTML = data['min'] + " minutos";
 							 document.getElementById("district").innerHTML=data['nombre'];
 							 document.getElementById("consume").innerHTML=data['consumo'];
-							 document.getElementById("liter").innerHTML=data['litros'];
+							 //document.getElementById("liter").innerHTML=data['litros'];
 							 document.getElementById("porc").innerHTML=data['porcentaje'];
 							 document.getElementById("mess").innerHTML=data['mensaje'];
+
+
+							 $('.animbot, .animtop').animate({
+						 		height: '10%'
+						 	}, 'slow', function(){
+
+						 		//$('.cover').hide();
+						 		$('.arrow').slideDown('slow');
+
+						 	});
 			       },
 
 			       error: function() {
@@ -105,14 +115,7 @@ $('.calcular').click(function(){
 			       });
 						 var objDiv = document.getElementById("divExample");
 
-						 $('.animbot, .animtop').animate({
-					 		height: '10%'
-					 	}, 'slow', function(){
 
-					 		//$('.cover').hide();
-					 		$('.data').slideDown('slow');
-
-					 	});
 
 		}
 
@@ -120,6 +123,43 @@ $('.calcular').click(function(){
 	}
 
 });
+
+function transitionTo(elem){
+
+    $('html, body').stop().animate({scrollTop: $(elem).offset().top
+
+    }, 2000, function ()  {
+
+
+    });
+}
+
+animacion = function(){
+
+  document.getElementById('arrow').classList.toggle('fade');
+}
+
+setInterval(animacion, 500);
+
+$('.arrow-img').click(function(e){
+	e.preventDefault();
+	$('.animbot, .animtop').animate({
+	 height: '10%'
+ }, 'slow', function(){
+
+	 //$('.cover').hide();
+	 $('.data').slideDown('slow');
+	 transitionTo('#data_div');
+
+ });
+
+
+
+
+
+});
+
+
 
 $('#minutes').keypress(function(e) {
 		//console.log(e.which);
