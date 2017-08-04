@@ -20,7 +20,7 @@
 
 <div class="cover">
 	<div class="animbot"></div><div class="animtop"></div>
-	<div class="container">
+	<div >
 		<div class="row">
 			<div class="col-md-7 right">
 				<h1>
@@ -73,7 +73,7 @@
 		<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 50px; padding-left: 10px"></a>
 		</div>
 	</div>
-
+<br><br><br><br>
 	<div class="data" id ="data_div">
 		<div class="container">
 			<i class="fa fa-times cerrar" aria-hidden="true"></i>
