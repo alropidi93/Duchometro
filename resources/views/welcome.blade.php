@@ -93,7 +93,7 @@
 			</div>
 		</div>
 
-<h5 class="center title">Ranking de consumo de agua promedio por persona en cada distrito</h5><br><br>
+<h5 class="center title"> Ranking de consumo diario de agua (promedio) por persona en cada distrito</h5><br><br>
 		<svg class="chart" width="1300" height="{{count($districts)*26.2}}">
 
 			@foreach ($districts as $key=>$d)
