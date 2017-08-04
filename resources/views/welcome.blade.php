@@ -94,7 +94,7 @@
 		</div>
 
 <h5 class="center title">Ranking de continuidad del servicio de agua potable</h5><br><br>
-		<svg class="chart" width="1000" height="{{count($districts)*20}}">
+		<svg class="chart" width="1000" height="{{count($districts)*26.2}}">
 
 			@foreach ($districts as $key=>$d)
 

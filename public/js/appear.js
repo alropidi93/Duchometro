@@ -12,6 +12,9 @@ $( document ).ready(function() {
 });
 
 
+
+
+
 $('.calcular').click(function(){
 
 	var id_district, minutes,name;
