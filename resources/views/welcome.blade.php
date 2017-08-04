@@ -81,7 +81,7 @@
 
 				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
 
-					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta,en promedio, una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
+					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta,en promedio, una persona en <b id="district"></b> al día (<b id="consume"></b> lt).
 
 				</div>
 				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
@@ -93,15 +93,15 @@
 			</div>
 		</div>
 
-<h5 class="center title">Ranking de continuidad del servicio de agua potable</h5><br><br>
-		<svg class="chart" width="1000" height="{{count($districts)*26.2}}">
+<h5 class="center title">Ranking de consumo de agua promedio por persona en cada distrito</h5><br><br>
+		<svg class="chart" width="1200" height="{{count($districts)*26.2}}">
 
 			@foreach ($districts as $key=>$d)
 
 		  <g transform="translate(360,{{$key*26}})">
 				<text x=-230 y="12" fill="red" dy=".35em" style="text-anchor: start;">{{$d->name}} </text>
-		    <rect width="{{$d->continuity*15}}" height="14"></rect>
-				<text x="{{$d->continuity*15+10}}" y="8" fill="red" dy=".35em" style="font: 10px Avenir-Medium;text-anchor: start;">{{$d->continuity}} horas</text>
+		    <rect width="{{$d->consumption*2}}" height="14"></rect>
+				<text x="{{$d->consumption*2+10}}" y="8" fill="red" dy=".35em" style="font: 10px Avenir-Medium;text-anchor: start;">{{$d->consumption}} lts.</text>
 
 		  </g>
 

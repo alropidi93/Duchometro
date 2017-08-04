@@ -15,7 +15,7 @@ class DistrictController extends Controller
     {
         //
         //$districts=District::All();
-        $districts= District::orderBy('continuity', 'ASC')->orderBy('name', 'ASC')->get();
+        $districts= District::orderBy('consumption', 'ASC')->orderBy('name', 'ASC')->get();
         $names= District::orderBy('name', 'ASC')->get();
         //return compact('districts');
         // $districts[0];
@@ -123,7 +123,7 @@ class DistrictController extends Controller
 
 
         if ($cont==0) {
-          $message= "Tu ducha no excedió el consumo diario (promedio) de agua en ningun distrito";
+          $message= "Tu ducha no superó el consumo (promedio) de agua de ningún distrito.";
         }
         else if ($cont==1){
           $message= "Tu ducha excedió el consumo diario (promedio) de agua en 1 distrito: ".$districtRank[0]['name'].".";
@@ -141,7 +141,8 @@ class DistrictController extends Controller
             .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].".";
         }
         else {
-          $message= "Tu ducha excedió el consumo diario (promedio) de agua en más de 4 distritos.";
+          $message= "Tu ducha excedió el consumo diario (promedio) de agua en más de 4 distritos: "
+            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].".";
         }
 
 
