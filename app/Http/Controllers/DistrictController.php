@@ -138,11 +138,11 @@ class DistrictController extends Controller
         }
         else if ($cont==4){
           $message= "Tu ducha excedió el consumo diario (promedio) de agua en 4 distritos: "
-            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].".";
+            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].", por ejemplo.";
         }
         else {
           $message= "Tu ducha excedió el consumo diario (promedio) de agua en más de 4 distritos: "
-            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].".";
+            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].", por ejemplo.";
         }
 
 
