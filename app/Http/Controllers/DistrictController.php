@@ -19,6 +19,9 @@ class DistrictController extends Controller
         $names= District::orderBy('name', 'ASC')->get();
         //return compact('districts');
         // $districts[0];
+
+
+
         return view('welcome',compact('districts'),compact('names'));
     }
 
@@ -104,6 +107,7 @@ class DistrictController extends Controller
         $district= District::find($id);
 
         $districtRank=District::orderBy('consumption', 'ASC')->get();
+        $numDistricts= $districtRank->count();
         $liters=$minutes*7;
 
         $cont=0;
@@ -122,6 +126,12 @@ class DistrictController extends Controller
         $porcentaje= round(($liters/$consume)*100);
 
 
+
+        $num1=rand(0,$numDistricts-1);
+        $num2=rand(0,$numDistricts-1);
+        $num3=rand(0,$numDistricts-1);
+        //echo $num1."-".$num2."-".$num3;
+
         if ($cont==0) {
           $message= "Tu ducha no superó el consumo (promedio) de agua de ningún distrito.";
         }
@@ -138,11 +148,11 @@ class DistrictController extends Controller
         }
         else if ($cont==4){
           $message= "Tu ducha excedió el consumo diario (promedio) de agua en 4 distritos: "
-            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].", por ejemplo.";
+            .$districtRank[$num1]['name'].", ". $districtRank[$num2]['name']." y ".$districtRank[$num3]['name'].", por ejemplo.";
         }
         else {
           $message= "Tu ducha excedió el consumo diario (promedio) de agua en más de 4 distritos: "
-            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].", por ejemplo.";
+            .$districtRank[$num1]['name'].", ". $districtRank[$num2]['name']." y ".$districtRank[$num3]['name'].", por ejemplo.";
         }
 
 
