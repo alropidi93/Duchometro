@@ -68,26 +68,23 @@
 				<p class="clari">* <span>No</span> guardamos su información</p>
 			</div>
 		</div>
-		<br><br><br>
-
+		<br><br><br><br>
+		<div  class="arrow" style="display:none; vertical-align:top; margin: 0; text-align:center">
+		<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 50px; padding-left: 10px"></a>
+		</div>
 	</div>
-
-
-	<div  class="arrow" style="display:none; vertical-align:top; text-align:center">
-	<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 50px; padding-left: 10px"></a>
-	</div>
-
 
 	<div class="data" id ="data_div">
 		<div class="container">
 			<i class="fa fa-times cerrar" aria-hidden="true"></i>
 			<div class="row description">
-				<div class="col-md-3">
+
+				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
 					Has utilizado el <span ><b id="porc"></b><sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
 
 				</div>
-				<div class="col-md-5">
-					<img src="img/drop.png"><img src="img/drop.png"><img src="img/drop.png"><br><br>
+				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
+
 					<b id="mess"></b>
 				</div>
 

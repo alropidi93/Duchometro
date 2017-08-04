@@ -128,7 +128,7 @@ function transitionTo(elem){
 
     $('html, body').stop().animate({scrollTop: $(elem).offset().top
 
-    }, 2000, function ()  {
+    }, 1000, function ()  {
 
 
     });
