@@ -80,7 +80,7 @@
 			<div class="row description">
 
 				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
-					Has utilizado el <span ><b id="porc"></b><sup>%</sup></span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
+					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
 
 				</div>
 				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
