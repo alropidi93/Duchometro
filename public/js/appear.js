@@ -108,7 +108,7 @@ $('.calcular').click(function(){
 
 			       error: function() {
 							 console.log('Error');
-
+							 alert("Server error");
 							 //mandar un mensaje diciendo que hubo un error con el servidor
 
 			          }

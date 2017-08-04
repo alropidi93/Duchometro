@@ -70,17 +70,18 @@
 		</div>
 		<br><br><br><br>
 		<div  class="arrow" style="display:none; vertical-align:top; margin: 0; text-align:center">
-		<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 50px; padding-left: 10px"></a>
+		<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 40px; padding-left: 10px"></a>
 		</div>
 	</div>
 <br><br><br><br>
 	<div class="data" id ="data_div">
 		<div class="container">
-			<i class="fa fa-times cerrar" aria-hidden="true"></i>
+
 			<div class="row description">
 
 				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
-					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
+
+					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta,en promedio, una persona en <b id="district"></b> al día ( <b id="consume"></b> lt)
 
 				</div>
 				<div class="col-md-6" style="float: left; width: 50%;text-align: center;">
@@ -92,15 +93,15 @@
 			</div>
 		</div>
 
-<h5 class="center title">Ranking de distritos de Lima por horas continuas de agua al día</h5><br><br>
+<h5 class="center title">Ranking de continuidad del servicio de agua potable</h5><br><br>
 		<svg class="chart" width="1000" height="{{count($districts)*20}}">
 
 			@foreach ($districts as $key=>$d)
 
-		  <g transform="translate(360,{{$key*20}})">
-				<text x=-230 y="15" fill="red" dy=".35em" style="text-anchor: start;">{{$d->name}} </text>
-		    <rect width="{{$d->continuity*25}}" height="18"></rect>
-				<text x="{{$d->continuity*25+10}}" y="14" fill="red" dy=".35em" style="font: 10px Avenir-Medium;text-anchor: start;">{{$d->continuity}} horas</text>
+		  <g transform="translate(360,{{$key*26}})">
+				<text x=-230 y="12" fill="red" dy=".35em" style="text-anchor: start;">{{$d->name}} </text>
+		    <rect width="{{$d->continuity*15}}" height="14"></rect>
+				<text x="{{$d->continuity*15+10}}" y="8" fill="red" dy=".35em" style="font: 10px Avenir-Medium;text-anchor: start;">{{$d->continuity}} horas</text>
 
 		  </g>
 
@@ -108,6 +109,7 @@
 
 		</svg>
 
+<h4 class="center title">Fuente: Sunass</h4> <br>
 
 
 	</div>
