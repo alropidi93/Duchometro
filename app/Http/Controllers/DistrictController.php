@@ -15,7 +15,7 @@ class DistrictController extends Controller
     {
         //
         //$districts=District::All();
-        $districts= District::orderBy('continuity', 'DESC')->orderBy('name', 'ASC')->get();
+        $districts= District::orderBy('continuity', 'ASC')->orderBy('name', 'ASC')->get();
         //return compact('districts');
         // $districts[0];
         return view('welcome',compact('districts'));

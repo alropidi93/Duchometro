@@ -92,15 +92,15 @@
 			</div>
 		</div>
 
-
+<h5 class="center title">Ranking de distritos de Lima por horas continuas de agua al día</h5><br><br>
 		<svg class="chart" width="1000" height="{{count($districts)*20}}">
 
 			@foreach ($districts as $key=>$d)
 
-		  <g transform="translate(250,{{$key*20}})">
-				<text x=-150 y="15" fill="red" dy=".35em" style="text-anchor: start;">{{$d->name}} </text>
-		    <rect width="{{$d->continuity*25}}" height="19"></rect>
-				<text x="{{$d->continuity*25+10}}" y="15" fill="red" dy=".35em" style="text-anchor: start;">{{$d->continuity}} horas</text>
+		  <g transform="translate(360,{{$key*20}})">
+				<text x=-230 y="15" fill="red" dy=".35em" style="text-anchor: start;">{{$d->name}} </text>
+		    <rect width="{{$d->continuity*25}}" height="18"></rect>
+				<text x="{{$d->continuity*25+10}}" y="14" fill="red" dy=".35em" style="font: 10px Avenir-Medium;text-anchor: start;">{{$d->continuity}} horas</text>
 
 		  </g>
 

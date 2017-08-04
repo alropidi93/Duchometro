@@ -31,22 +31,40 @@ body {
 	font-family: 'Avenir-Medium';
 
 }
+h5 {
+		font-family: 'Avenir-Medium';
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0.82rem 0 0.656rem 0;
+		font-weight: bold;
+}
 .chart rect {
   fill: #467fff;
 }
 
 .chart text {
   fill: black;
-  font: 10px sans-serif;
+  font: 15px Avenir-Medium;
   text-anchor: start;
 }
 
 .inl {
     display: inline;
 
-
-
 }
+
+.title {
+    font-family: 'Avenir-Medium';
+		color:black;
+		width: 100%;
+}
+
+.center, .center-align {
+    text-align: center;
+}
+
+
+
 
 .cover{
 	padding:250px 0px 0px 0px;
