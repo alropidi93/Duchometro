@@ -43,8 +43,8 @@
 
 						<div class="options">
 
-							@foreach ($districts as $d)
-							<div class="option" value="{{$d->id}}">{{$d->name}}</div>
+							@foreach ($names as $n)
+							<div class="option" value="{{$n->id}}">{{$n->name}}</div>
 
 							@endforeach
 
