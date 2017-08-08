@@ -1,13 +1,13 @@
-$('.field').click(function(){
+$('.field').click(function(e){
 	$(this).find('.options').slideToggle('fast');
 	var d_hide = $(this).attr('d-hide')
 	$('.field'+d_hide).find('.options').hide();
-	event.stopPropagation();
+	e.stopPropagation();
 })
 
 $('.option').click(function(){
 	var value = $(this).html();
-	
+
 	var id= $(this).attr('value');
 	//console.log(id);
 	//$(this).parent().parent().find('.sel').attr('id')=id;
