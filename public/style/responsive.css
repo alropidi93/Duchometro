@@ -33,6 +33,7 @@
 
 	.calcular{
 		width: 100%;
+		padding-left: 50px;
 
 	}
 
@@ -97,7 +98,7 @@
 		font-size: 17px;
 	}
 	.chart{
-		padding-left: 260px;
+		padding-left: 50px;
 	}
 	.data g{
 

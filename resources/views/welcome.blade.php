@@ -99,9 +99,9 @@
 			@foreach ($districts as $key=>$d)
 
 		  <g transform="translate(0,{{$key*26}})">
-				<text id="districtGraph" x=-230 y="12" fill="red" dy=".35em">{{$d->name}} </text>
-		    <rect width="{{$d->consumption*2}}" height="14"></rect>
-				<text id="valueGraph"x="{{$d->consumption*2+10}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
+				<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
+		    <rect width="{{$d->consumption*2}}" x=215 height="14"></rect>
+				<text id="valueGraph"x="{{$d->consumption*2+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
 
 		  </g>
 
