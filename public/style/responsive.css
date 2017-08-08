@@ -52,7 +52,7 @@
 		padding-right: 0px;
 		padding-left: 20px;
 		padding-top: 20px;
-		padding-bottom: 0px
+		padding-bottom: 32px
 	}
 
 	.data h4{
@@ -91,13 +91,7 @@
 
  }
 
- #districtGraph{
 
- }
-
- #valueGraph{
-
- }
 	.data p{
 		font-size: 17px;
 	}
