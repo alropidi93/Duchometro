@@ -101,13 +101,21 @@ class DistrictController extends Controller
         //,'consumo' => $district['consumption'],'micromedicion' => $district['micromedition'],
         //'facturacion' => $district['facturation'],'min'=>$min));
 
+        //obtenemos el id del distrito a apartir del request de ajax
         $id=$request['district'];
+        //obtenemos el numero de minutos a apartir del request de ajax
         $minutes=$request['minutes'];
 
+        //obtenemos el registro del distrito correspondiente al id
         $district= District::find($id);
 
+        //obtenemos todos los datos de los distritos ordenamos por el campo consumption de forma ascendente
         $districtRank=District::orderBy('consumption', 'ASC')->get();
+
+        //obtengo la cantidad de distritos en la base de datos
         $numDistricts= $districtRank->count();
+
+        //calculamos la cantidad de litros de agua consumidos en cada minuto
         $liters=$minutes*7;
 
         $cont=0;
@@ -127,9 +135,16 @@ class DistrictController extends Controller
 
 
 
-        $num1=rand(0,$numDistricts-1);
-        $num2=rand(0,$numDistricts-1);
-        $num3=rand(0,$numDistricts-1);
+        $num1=rand(0,$cont-1);
+        while(1){
+          $num2=rand(0,$cont-1);
+          if ($num2!=$num1) break;
+        }
+        while(1){
+          $num3=rand(0,$cont-1);
+          if ($num3!=$num1 && $num3!=$num2) break;
+        }
+
         //echo $num1."-".$num2."-".$num3;
 
         if ($cont==0) {
