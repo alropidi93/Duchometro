@@ -47,19 +47,70 @@
 		font-size: 35px;
 	}
 
+	.data h5{
+		font-size: 20px;
+		padding-right: 0px;
+		padding-left: 20px;
+		padding-top: 20px;
+		padding-bottom: 0px
+	}
+
+	.data h4{
+		font-size: 20px;
+		padding-right: 0px;
+		padding-left: 20px;
+		padding-top: 0px;
+		padding-bottom: 0px
+	}
+	.arrow {
+		display:none;
+		vertical-align:top;
+		margin: 0;
+		text-align:center;
+		padding-bottom: 0px;
+	}
+
 	.data h2 span{
 		font-size: 16px;
 		letter-spacing: 0.5px;
 	}
 
-	.data .container{
+	.data .container {
 		padding-top: 50px;
-	}
+		font-size: :35px;
 
+	}
+	#text1 {
+    text-align: left;
+		font-size: 15px
+
+ }
+ #text2 {
+ 	text-align: left;
+  font-size: 15px
+
+ }
+
+ #districtGraph{
+
+ }
+
+ #valueGraph{
+
+ }
 	.data p{
 		font-size: 17px;
 	}
+	.chart{
+		padding-left: 260px;
+	}
+	.data g{
 
+   /*-ms-transform: translate(50px, 100px); /* IE 9 */
+   /*-webkit-transform: translate(50px, 100px); /* Safari */
+
+
+	}
 	.logo{
 		font-size: 30px;
 	}
