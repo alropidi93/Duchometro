@@ -58,7 +58,7 @@
 						¿Cuántos minutos demoras en bañarte?
 					</p>
 					<div class="field field2" d-hide="1">
-						<input id="minutes" type="number"   placeholder="Ej: 15">
+						<input id="minutes" type="number"   autocomplete="off" placeholder="Ej: 15">
 					</div>
 				</div>
 				<button class="calcular">
