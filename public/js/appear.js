@@ -98,6 +98,41 @@ $('.calcular').click(function(){
 							 document.getElementById("porc").innerHTML=data['porcentaje'];
 							 document.getElementById("mess").innerHTML=data['mensaje'];
 
+ 						 		console.log('r');
+							  console.log(data['porcentajeMenor']);
+								 if(data['porcentajeMenor']<=100)
+								 {
+									 if(data['porcentajeMenor']<=75)
+									 {
+
+											 if(data['porcentajeMenor']<=50)
+											 {
+												 if(data['porcentajeMenor']<=25)
+												 {
+													 document.getElementById("gota").setAttribute("src","img\\1.png");
+												 }
+												 else{
+													 document.getElementById("gota").setAttribute("src","img\\2.png");
+												 }
+											 }
+											 else{
+												 	document.getElementById("gota").setAttribute("src","img\\3.png");
+											 }
+
+
+
+									 }
+									 else{
+										 	document.getElementById("gota").setAttribute("src","img\\4.png");
+									 }
+								 }
+								 else{
+									 document.getElementById("gota").setAttribute("src","img\\5.png");
+								 }
+
+
+
+
 
 							 $('.animbot, .animtop').animate({
 						 		height: '10%'

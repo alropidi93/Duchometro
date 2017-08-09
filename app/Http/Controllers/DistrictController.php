@@ -110,73 +110,44 @@ class DistrictController extends Controller
         $district= District::find($id);
 
         //obtenemos todos los datos de los distritos ordenamos por el campo consumption de forma ascendente
-        $districtRank=District::orderBy('consumption', 'ASC')->get();
+        $districtLower=District::orderBy('continuity', 'ASC')->first();
 
         //obtengo la cantidad de distritos en la base de datos
-        $numDistricts= $districtRank->count();
+
 
         //calculamos la cantidad de litros de agua consumidos en cada minuto
         $liters=$minutes*7;
 
-        $cont=0;
 
-        foreach ($districtRank as $d) {
-          if ($liters>$d['consumption']){
-            $cont++;
-          }
-          else break;
-        }
 
         $consume=$district['consumption'];
 
+        $consumeLower=$districtLower['consumption'];
 
         //$message="Hola";
         $porcentaje= round(($liters/$consume)*100);
+        $porcLower=round(($liters/$consumeLower)*100);
 
 
 
-        $num1=rand(0,$cont-1);
-        while(1){
-          $num2=rand(0,$cont-1);
-          if ($num2!=$num1) break;
-        }
-        while(1){
-          $num3=rand(0,$cont-1);
-          if ($num3!=$num1 && $num3!=$num2) break;
-        }
 
         //echo $num1."-".$num2."-".$num3;
 
-        if ($cont==0) {
-          $message= "Tu ducha no superó el consumo (promedio) de agua de ningún distrito.";
-        }
-        else if ($cont==1){
-          $message= "Tu ducha excedió el consumo diario (promedio) de agua en 1 distrito: ".$districtRank[0]['name'].".";
-        }
-        else if ($cont==2){
-          $message= "Tu ducha excedió el consumo diario (promedio) de agua en 2 distritos: ".
-                $districtRank[0]['name']." y ".  $districtRank[1]['name'].".";
-        }
-        else if ($cont==3){
-          $message= "Tu ducha excedió el consumo diario (promedio) de agua en 3 distritos: "
-            .$districtRank[0]['name'].", ". $districtRank[1]['name']." y ".$districtRank[2]['name'].".";
-        }
-        else if ($cont==4){
-          $message= "Tu ducha excedió el consumo diario (promedio) de agua en 4 distritos: "
-            .$districtRank[$num1]['name'].", ". $districtRank[$num2]['name']." y ".$districtRank[$num3]['name'].", por ejemplo.";
-        }
-        else {
-          $message= "Tu ducha excedió el consumo diario (promedio) de agua en más de 4 distritos: "
-            .$districtRank[$num1]['name'].", ". $districtRank[$num2]['name']." y ".$districtRank[$num3]['name'].", por ejemplo.";
-        }
+
+        $message= "En ".$minutes." minutos has usado el "
+                  .$porcLower."% del agua que utiliza, al día, un vecino de "
+                  .$districtLower['name'].", el distrito con menos horas de agua al dia.";
 
 
 
 
-        $data['min']=$minutes;
+
+
+
         $data['litros']=$liters;
         $data['mensaje']=$message;
         $data['porcentaje']=$porcentaje;
+        $data['porcentajeMenor']=$porcLower;
         $data['nombre']=$district['name'];
         $data['consumo']=$consume;
 

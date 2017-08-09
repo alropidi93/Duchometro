@@ -87,7 +87,11 @@ h4 {
 .center, .center-align {
     text-align: center;
 }
-
+#gota{
+	height: 80px;
+	display: block;
+  margin: 0 auto;
+}
 
 #text1{
 	float: left;

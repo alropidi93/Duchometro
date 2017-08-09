@@ -81,7 +81,7 @@
 
 				<div id="text1" class="col-md-6" >
 
-					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta, en promedio, una persona en <b id="district"></b> al día (<b id="consume"></b> lt).
+					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
 
 				</div>
 				<div id="text2" class="col-md-6">
@@ -89,6 +89,7 @@
 					<b id="mess"></b>
 				</div>
 
+				<img id="gota" src="">
 
 			</div>
 		</div>
