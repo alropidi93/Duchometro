@@ -98,7 +98,7 @@ $('.calcular').click(function(){
 							 document.getElementById("porc").innerHTML=data['porcentaje'];
 							 document.getElementById("mess").innerHTML=data['mensaje'];
 
- 						 		console.log('r');
+
 							  console.log(data['porcentajeMenor']);
 								 if(data['porcentajeMenor']<=100)
 								 {
