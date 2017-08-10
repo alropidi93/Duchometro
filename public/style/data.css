@@ -9,7 +9,8 @@
 
 .data .container{
 	position: relative;
-	padding-top: 100px;
+	padding-top: 0px;
+	margin-bottom: 100px;
 }
 
 .data .cerrar{

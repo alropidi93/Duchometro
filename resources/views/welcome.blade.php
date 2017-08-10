@@ -76,34 +76,37 @@
 
 	<div class="data" id ="data_div">
 		<div class="container">
-			<div id="text1"  width=100% >
+
+			<div id="text1" >
 
 				Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
 
 			</div>
 
-			<div class="row description">
 
 
-				<div id="text2" class="col-md-6">
+			<div class="contenedor">
+				<div id="text2" >
 
 					<b id="mess"></b>
 				</div>
-				<div class="col-md-6">
-					<img id="gota" src="">
+				<div class="drop">
+					<img id="gota"    src="">
 				</div>
-
-
 			</div>
+
+
+
+
 		</div>
 
-		<div class="tab">
+		<div class="contenedor">
 			<button id="rank1">
-				<i class="fa fa-chevron-left" aria-hidden="true"></i>
+
 				Ranking de consumo (promedio) de agua por persona al día
 			</button>
 			<button id="rank2">
-				<i class="fa fa-chevron-left" aria-hidden="true"></i>
+
 				 Ranking de facturacion promedio por conexión formal
 			</button>
 		</div>
@@ -117,10 +120,10 @@
 
 		@foreach ($districts as $key=>$d)
 
-		<g transform="translate(0,{{$key*26}})">
+		<g transform="translate(150,{{$key*26}})">
 			<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
-			<rect width="{{$d->consumption*2}}" x=215 height="14"></rect>
-			<text id="valueGraph"x="{{$d->consumption*2+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
+			<rect width="{{$d->consumption*1.5}}" x=215 height="14"></rect>
+			<text id="valueGraph"x="{{$d->consumption*1.5+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
 
 		</g>
 
@@ -134,10 +137,10 @@
 
 		@foreach ($facturations as $key=>$d)
 
-		<g transform="translate(0,{{$key*26}})">
+		<g transform="translate(150,{{$key*26}})">
 			<text id="districtGraph2" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
-			<rect width="{{$d->facturation*2}}" x=215 height="14"></rect>
-			<text id="valueGraph2" x="{{$d->facturation*2+225}}" y="8" fill="red" dy=".35em" >{{$d->facturation}}</text>
+			<rect width="{{$d->facturation*1.5}}" x=215 height="14"></rect>
+			<text id="valueGraph2" x="{{$d->facturation*1.5+225}}" y="8" fill="red" dy=".35em" >{{$d->facturation}}</text>
 
 		</g>
 
