@@ -76,39 +76,85 @@
 
 	<div class="data" id ="data_div">
 		<div class="container">
+			<div id="text1"  width=100% >
+
+				Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
+
+			</div>
 
 			<div class="row description">
 
-				<div id="text1" class="col-md-6" >
 
-					Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
-
-				</div>
 				<div id="text2" class="col-md-6">
 
 					<b id="mess"></b>
 				</div>
+				<div class="col-md-6">
+					<img id="gota" src="">
+				</div>
 
-				<img id="gota" src="">
 
 			</div>
 		</div>
 
-<h5 class="center title"> Ranking de consumo diario de agua (promedio) por persona en cada distrito</h5>
-		<svg class="chart" width="1300" height="{{count($districts)*26.2}}">
+		<div class="tab">
+			<button id="rank1">
+				<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				Ranking de consumo (promedio) de agua por persona al día
+			</button>
+			<button id="rank2">
+				<i class="fa fa-chevron-left" aria-hidden="true"></i>
+				 Ranking de facturacion promedio por conexión formal
+			</button>
+		</div>
 
-			@foreach ($districts as $key=>$d)
 
-		  <g transform="translate(0,{{$key*26}})">
-				<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
-		    <rect width="{{$d->consumption*2}}" x=215 height="14"></rect>
-				<text id="valueGraph"x="{{$d->consumption*2+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
 
-		  </g>
 
-		  @endforeach
 
-		</svg>
+<div id ="rankOne" style="display:block" >
+	<svg class="chart" width="1300" height="{{count($districts)*26.2}}">
+
+		@foreach ($districts as $key=>$d)
+
+		<g transform="translate(0,{{$key*26}})">
+			<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
+			<rect width="{{$d->consumption*2}}" x=215 height="14"></rect>
+			<text id="valueGraph"x="{{$d->consumption*2+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
+
+		</g>
+
+		@endforeach
+
+	</svg>
+</div>
+
+<div  id="rankTwo" style="display:none">
+	<svg class="chart" width="1300" height="{{count($facturations)*26.2}}">
+
+		@foreach ($facturations as $key=>$d)
+
+		<g transform="translate(0,{{$key*26}})">
+			<text id="districtGraph2" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
+			<rect width="{{$d->facturation*2}}" x=215 height="14"></rect>
+			<text id="valueGraph2" x="{{$d->facturation*2+225}}" y="8" fill="red" dy=".35em" >{{$d->facturation}}</text>
+
+		</g>
+
+		@endforeach
+
+	</svg>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 <h4 class="center title">Fuente: Superintendencia Nacional de Servicios de Saneamiento (SUNASS)</h4> <br>
 

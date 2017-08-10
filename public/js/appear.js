@@ -11,8 +11,15 @@ $( document ).ready(function() {
 	}, 700);
 });
 
+$('#rank1').click(function(){
+	 document.getElementById("rankOne").setAttribute("style","display:block");
+	 document.getElementById("rankTwo").setAttribute("style","display:none");
+});
+$('#rank2').click(function(){
+	document.getElementById("rankTwo").setAttribute("style","display:block");
+	document.getElementById("rankOne").setAttribute("style","display:none");
 
-
+});
 
 
 $('.calcular').click(function(){

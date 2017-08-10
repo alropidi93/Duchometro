@@ -16,13 +16,15 @@ class DistrictController extends Controller
         //
         //$districts=District::All();
         $districts= District::orderBy('consumption', 'ASC')->orderBy('name', 'ASC')->get();
-        $names= District::orderBy('name', 'ASC')->get();
+        $names = District::orderBy('name', 'ASC')->get();
+        $facturations = District::orderBy('facturation', 'ASC')->orderBy('name', 'ASC')->get();
+        //return $facturations;
         //return compact('districts');
         // $districts[0];
 
 
 
-        return view('welcome',compact('districts'),compact('names'));
+        return view('welcome',compact('districts'),compact('names'))->with(compact('facturations'));
     }
 
     /**

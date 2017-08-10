@@ -104,12 +104,12 @@ h4 {
 	 text-align: center;
 }
 
-#districtGraph{
+#districtGraph, #districtGraph2{
 	text-anchor: start;
 	z-index:1;
 }
 
-#valueGraph{
+#valueGraph, #valueGraph2{
 	font: 10px Avenir-Medium;
 	text-anchor: start;
 }
@@ -176,6 +176,70 @@ h4 {
 #temperature i{
 	font-size: 30px;
 	margin-right: 6px;
+}
+
+#rank1{
+	padding: 10px 0px;
+	background: #467FFF;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-top: 0px;
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	outline: none;
+	position: relative;
+	/*border-radius: 50px;*/
+}
+
+#rank2{
+	padding: 10px 0px;
+	background: #DC143C;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-top: 0px;
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	outline: none;
+	position: relative;
+	/*border-radius: 50px;*/
+}
+
+#text1{
+	padding: 10px 0px;
+	background: #467FFF;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-top: 0px;
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	outline: none;
+	position: relative;
+	/*border-radius: 50px;*/
+}
+
+#text2{
+	padding: 10px 0px;
+	background: #DC143C;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-top: 0px;
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	outline: none;
+	position: relative;
+	/*border-radius: 50px;*/
 }
 
 h1{
@@ -285,6 +349,7 @@ h1{
 .calcular i{
 	font-size: 15px;
 }
+
 
 .clari{
 	font-size: 13px;
