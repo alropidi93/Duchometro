@@ -77,9 +77,12 @@
 	<div class="data" id ="data_div">
 		<div class="container">
 
-			<div id="text1" >
+			<div id="text1">
+				<div id="mess2">
+					Has utilizado el <span ><b id="porc"></b>%
+					</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
 
-				Has utilizado el <span ><b id="porc"></b>%</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
+				</div>
 
 			</div>
 
@@ -100,7 +103,7 @@
 
 		</div>
 
-		<div class="contenedor">
+		<div class="tab">
 			<button id="rank1">
 
 				Ranking de consumo (promedio) de agua por persona al día
@@ -114,13 +117,15 @@
 
 
 
+<div class="rank">
+
 
 <div id ="rankOne" style="display:block" >
 	<svg class="chart" width="1300" height="{{count($districts)*26.2}}">
 
 		@foreach ($districts as $key=>$d)
 
-		<g transform="translate(150,{{$key*26}})">
+		<g transform="translate(0,{{$key*26}})">
 			<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
 			<rect width="{{$d->consumption*1.5}}" x=215 height="14"></rect>
 			<text id="valueGraph"x="{{$d->consumption*1.5+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
@@ -137,16 +142,18 @@
 
 		@foreach ($facturations as $key=>$d)
 
-		<g transform="translate(150,{{$key*26}})">
+		<g transform="translate(0,{{$key*26}})">
 			<text id="districtGraph2" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
 			<rect width="{{$d->facturation*1.5}}" x=215 height="14"></rect>
-			<text id="valueGraph2" x="{{$d->facturation*1.5+225}}" y="8" fill="red" dy=".35em" >{{number_format($d->facturation,2)}}</text>
+			<text id="valueGraph2" x="{{$d->facturation*1.5+225}}" y="8" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
 
 		</g>
 
 		@endforeach
 
 	</svg>
+</div>
+<h4 class="title">Fuente: Superintendencia Nacional de Servicios de Saneamiento (SUNASS)</h4>
 </div>
 
 
@@ -159,7 +166,6 @@
 
 
 
-<h4 class="center title">Fuente: Superintendencia Nacional de Servicios de Saneamiento (SUNASS)</h4> <br>
 
 
 	</div>
