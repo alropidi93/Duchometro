@@ -140,7 +140,7 @@
 		<g transform="translate(150,{{$key*26}})">
 			<text id="districtGraph2" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
 			<rect width="{{$d->facturation*1.5}}" x=215 height="14"></rect>
-			<text id="valueGraph2" x="{{$d->facturation*1.5+225}}" y="8" fill="red" dy=".35em" >{{$d->facturation}}</text>
+			<text id="valueGraph2" x="{{$d->facturation*1.5+225}}" y="8" fill="red" dy=".35em" >{{number_format($d->facturation,2)}}</text>
 
 		</g>
 
