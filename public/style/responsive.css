@@ -190,14 +190,15 @@
  	overflow: hidden;
  	margin-bottom: 70px;
  	margin-left: 10%;
- 	margin-right: 0px;
+ 	margin-right: 0pxr;
+	width: 80%;
  }
 
  #rank1{
 
 
 
- 	font-size: 40%;
+ 	font-size: 30%;
  	width: 30%;
  	height: 95px;
  	text-align: center;
@@ -214,7 +215,7 @@
 
 
  	margin-top: 0px;
- 	font-size:40%;
+ 	font-size:30%;
  	width: 30%;
  	height: 95px;
  	text-align: center;
