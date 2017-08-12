@@ -145,12 +145,12 @@
 
 		@foreach ($facturations as $key=>$d)
 
-		
+
 
 
 		<g transform="translate(0,{{$key*26}})">
 
-			<text id="districtGraph2" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
+			<text id="districtGraph2" textLenght="100%" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
 
 			<rect width="{{$d->facturation*0.14}}%" x=29% height="14"></rect>
 			<text id="valueGraph2" x="{{$d->facturation*0.14+30}}%" y="8" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
