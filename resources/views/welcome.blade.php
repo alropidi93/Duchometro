@@ -70,7 +70,7 @@
 		</div>
 
 		<div class="arrow" >
-		<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 40px; padding-left: 10px"></a>
+		<a class="arrow-img" id="arrow" href="#data_div"><img id="img-arrow" src="img\blue_arrow.png" ></a>
 		</div>
 
 
