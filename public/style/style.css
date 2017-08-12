@@ -77,9 +77,11 @@ h4 {
   fill: #467fff;
 }
 
+
+
 .chart text {
   fill: black;
-  font: 15px Avenir-Medium;
+  font: 50% Avenir-Medium;
   text-anchor: start;
 }
 
@@ -199,20 +201,25 @@ h4 {
 	margin-bottom: 70px;
 	padding-left: 5%;
 	padding-right: 5%;
-	width: 90%;
+	width: 100%;
 }
 .rank{
-	margin-left: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
 	width: 80%;
 	margin-bottom: 5%;
 }
 #rankOne{
-	width: 80%;
-	margin-left: 15%;
+	width: 90%;
+	margin-left: 10%;
+	margin-right: 0%;
+
 }
+
 #rankTwo{
-	width: 80%;
-	margin-left: 15%;
+	width: 90%;
+	margin-left: 10%;
+	margin-right: 0%;
 }
 #temperature{
 	font-size: 100px;

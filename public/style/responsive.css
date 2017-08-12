@@ -214,7 +214,7 @@
  #rank1{
 
 
-
+	margin-top: 0px;
  	font-size: 40%;
  	width: 50%;
  	height: 100px;
@@ -239,16 +239,23 @@
  	letter-spacing: 0.5px;
  	outline: none;
  	position: relative;
- 	display: inline;
+
  	/*border-radius: 50px;*/
 
 
  }
+
+
 	.data p{
 		font-size: 17px;
 	}
 	.chart{
-		padding-left: 50px;
+		padding-left: 0px;
+	}
+	.chart text {
+	  fill: black;
+	  font: 35% Avenir-Medium;
+	  text-anchor: start;
 	}
 	.data g{
 
