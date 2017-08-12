@@ -145,7 +145,7 @@
 
 		@foreach ($facturations as $key=>$d)
 
-		<div class="gcontent" width="100%">
+		
 
 
 		<g transform="translate(0,{{$key*26}})">
