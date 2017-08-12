@@ -20,7 +20,7 @@
 
 <div class="cover">
 	<div class="animbot"></div><div class="animtop"></div>
-	<div >
+
 		<div class="row">
 			<div class="col-md-7 right">
 				<h1>
@@ -68,11 +68,11 @@
 				<p class="clari">* <span>No</span> guardamos su información</p>
 			</div>
 		</div>
-		<br><br><br><br>
+
 		<div class="arrow" >
 		<a class="arrow-img" id="arrow" href="#data_div"><img src="img\blue_arrow.png" style="height: 40px; padding-left: 10px"></a>
 		</div>
-	</div>
+
 
 	<div class="data" id ="data_div">
 		<div class="container">
@@ -94,7 +94,7 @@
 					<b id="mess"></b>
 				</div>
 				<div class="drop">
-					<img id="gota"    src="">
+					<img id="gota"  src="">
 				</div>
 			</div>
 
@@ -103,32 +103,32 @@
 
 		</div>
 
-		<div class="tab">
-			<button id="rank1">
 
-				Ranking de consumo (promedio) de agua por persona al día
-			</button>
-			<button id="rank2">
-
-				 Ranking de facturacion promedio por conexión formal
-			</button>
-		</div>
 
 
 
 
 <div class="rank">
+	<div class="tab">
+		<button id="rank1">
 
+			Ranking de consumo (promedio) de agua por persona al día
+		</button>
+		<button id="rank2">
+
+			 Ranking de facturacion promedio por conexión formal
+		</button>
+	</div>
 
 <div id ="rankOne" style="display:block" >
-	<svg class="chart" width="1300" height="{{count($districts)*26.2}}">
+	<svg class="chart"  height="{{count($districts)*26.2}}">
 
 		@foreach ($districts as $key=>$d)
 
-		<g transform="translate(0,{{$key*26}})">
+		<g transform="translate(0,{{$key*26}})" >
 			<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
-			<rect width="{{$d->consumption*1.5}}" x=215 height="14"></rect>
-			<text id="valueGraph"x="{{$d->consumption*1.5+225}}" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
+			<rect width="{{$d->consumption*0.14}}%" x=215 height="14"></rect>
+			<text id="valueGraph" x="{{$d->consumption*0.14+38}}%" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
 
 		</g>
 
@@ -138,14 +138,14 @@
 </div>
 
 <div  id="rankTwo" style="display:none">
-	<svg class="chart" width="1300" height="{{count($facturations)*26.2}}">
+	<svg class="chart"  height="{{count($facturations)*26.2}}">
 
 		@foreach ($facturations as $key=>$d)
 
 		<g transform="translate(0,{{$key*26}})">
 			<text id="districtGraph2" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
-			<rect width="{{$d->facturation*1.5}}" x=215 height="14"></rect>
-			<text id="valueGraph2" x="{{$d->facturation*1.5+225}}" y="8" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
+			<rect width="{{$d->facturation*0.14}}%" x=215 height="14"></rect>
+			<text id="valueGraph2" x="{{$d->facturation*0.14+38}}%" y="8" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
 
 		</g>
 

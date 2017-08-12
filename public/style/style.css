@@ -35,6 +35,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Avenir-Medium';
 
+
 }
 h5 {
 		font-family: 'Avenir-Medium';
@@ -51,11 +52,12 @@ h4 {
 		font-family: 'Avenir-Medium';
     font-size: 20px;
     line-height: 100%;
-    margin-left: 25%;
+    margin-left: 15%;
+		margin-right: 15%;
 		padding-right: 0px;
 		padding-left: 0px;
 		font-weight: bold;
-		text-align: left;
+		text-align: center;
 
 }
 .arrow {
@@ -63,6 +65,7 @@ h4 {
 	vertical-align:top;
 
 	text-align:center;
+	margin-top: 100px;
 	margin-bottom: 100px;
 }
 .chart rect {
@@ -83,7 +86,7 @@ h4 {
 .title {
     font-family: 'Avenir-Medium';
 		color:black;
-		width: 100%;
+		width: 70%;
 }
 
 .center, .center-align {
@@ -92,30 +95,35 @@ h4 {
 
 
 .drop img{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 20%;
+	padding-right: 20%;
 
-	height: 200px;
+	position: relative;
+
+
 	display: inline-block;
   object-fit: contain;
 	vertical-align: middle;
-	padding-left:  0px;
-	width: 25%;
+
+
+	width: 100%;
+	height: 100%;
 }
 .drop{
-	padding-left:0px;
-	padding-right:0px;
-	padding-top:0px;
-	padding-bottom:0px;
-
+	padding: 0%;
+	justify-content: center;
 	border: none;
 	border-radius: 3px;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-bottom: px;
+	margin-bottom: 0px;
 
-	width: 25%;
+	width: 30%;
+	float: right;
 	height: 200px;
-
 	outline: none;
 	position: relative;
 	display: inline;
@@ -133,9 +141,14 @@ h4 {
 	text-anchor: start;
 }
 .chart{
-	padding-left: 250px;
+	padding-left: 0;
 	padding-top: 0px;
 	z-index:0;
+
+	width: 100%;
+}
+.space{
+	width: 50%;
 }
 .cover{
 	padding:80px 0px 0px 0px;
@@ -145,6 +158,8 @@ h4 {
 	background-size: cover;
 	position: relative;
 	height: 100%;
+	left: 0px;
+	right: 0px;
 }
 
 .cover .container{
@@ -177,18 +192,22 @@ h4 {
 .tab{
 	overflow: hidden;
 	margin-bottom: 70px;
-	margin-left: 320px;
-	margin-right: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
 }
 .rank{
-	margin-left: 10%;
-	width: 100%;
+	margin-left: 20%;
+	width: 80%;
+	margin-bottom: 5%;
 }
 #rankOne{
-	width: 100%;
+	width: 80%;
+	margin-left: 15%;
 }
 #rankTwo{
-	width: 100%;
+	width: 80%;
+	margin-left: 15%;
 }
 #temperature{
 	font-size: 100px;
@@ -218,9 +237,9 @@ h4 {
 	color: white;
 	border: none;
 	border-radius: 3px;
-
+	margin-left: 0;
 	font-size: 50%;
-	width: 30%;
+	width: 50%;
 	height: 95px;
 	text-align: center;
 	letter-spacing: 0.5px;
@@ -238,9 +257,9 @@ h4 {
 	color: white;
 	border: none;
 	border-radius: 3px;
-	margin-top: 0px;
+	margin-right:  0%;
 	font-size:50%;
-	width: 30%;
+	width: 50%;
 	height: 95px;
 	text-align: center;
 	letter-spacing: 0.5px;
@@ -261,12 +280,13 @@ h4 {
 	color: white;
 	border: none;
 	border-radius: 3px;
-	margin-top: 0px;
-	margin-left: 100px;
+	margin-top: 10px;
+	margin-right: 0%;
+	margin-left: 0%;
 	margin-bottom: 5px;
 	padding: 2%;
 	font-size: 80%;
-	width: 80%;
+	width: 100%;
 	height: 100px;
 	text-align: center;
 	vertical-align: middle;
@@ -286,11 +306,11 @@ h4 {
 	vertical-align: middle;
 	border-radius: 3px;
 	margin-top: 0px;
-	margin-left: 100px;
-	margin-right: 20px;
-	margin-bottom: 40px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 	font-size: 80%;
-	width: 55%;
+	width: 70%;
 	height: 200px;
 	text-align: center;
 	letter-spacing: 0.5px;
