@@ -116,7 +116,7 @@
 		</button>
 		<button id="rank2">
 
-			 Ranking de facturacion promedio por conexión formal
+			Ranking de pago mensual (por conexión formal de agua)
 		</button>
 	</div>
 
@@ -141,7 +141,7 @@
 </div>
 
 <div  id="rankTwo" style="display:none">
-	<svg class="chart"  height="{{count($facturations)*26.2}}">
+	<svg class="chart"  id ="chartTwo" height="{{count($facturations)*26.2}}">
 
 		@foreach ($facturations as $key=>$d)
 

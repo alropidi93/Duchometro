@@ -21,6 +21,30 @@ $('#rank2').click(function(){
 
 });
 
+$('#rank2').mouseover(function(){
+	console.log("encima de rank2");
+	document.getElementById("rank2").style.background="#ff5274";//aclaramos el guinda
+
+
+});
+$('#rank2').mouseout(function(){
+	document.getElementById("rank2").style.background="#DC143C";//volvemos al guinda normal
+});
+
+$('#rank1').mouseover(function(){
+	console.log("encima de rank1");
+	document.getElementById("rank1").style.background="#7ea0ef";//aclaramos el azul
+
+
+});
+$('#rank1').mouseout(function(){
+	document.getElementById("rank1").style.background="#467FFF";//volcemos al azul normal
+});
+	//document.getElementById("rankTwo").setAttribute("style","display:block");
+	//document.getElementById("rankOne").setAttribute("style","display:none");
+
+
+
 
 $('.calcular').click(function(){
 
@@ -90,8 +114,8 @@ $('.calcular').click(function(){
 							 	}
 							 	//var show = (count<100?count<10?'00':'0':'')+count;
 								var show = (count<100?count<10?'00':'0':'')+count;
-							 	if( count > 150 ) color = '#FF3C3A';
-							 	else color = '#467FFF';
+							 	if( count > 150 ) color = '#DC143C'; //color guinda
+							 	else color = '#467FFF';//color azul
 							 	$('#temperature').html('<i class="fa fa-tint" aria-hidden="true"></i>'+show+"<span>Lts</span>").css('color',color) ; // watch for spelling
 								if (Number(show)==data['litros']) return;
 								counter = setTimeout(timer, ms);
@@ -109,12 +133,12 @@ $('.calcular').click(function(){
 							  console.log(data['porcentajeMenor']);
 								 if(data['porcentajeMenor']<=100)
 								 {
-									 if(data['porcentajeMenor']<=75)
+									 if(data['porcentajeMenor']<=80)
 									 {
 
-											 if(data['porcentajeMenor']<=50)
+											 if(data['porcentajeMenor']<=60)
 											 {
-												 if(data['porcentajeMenor']<=25)
+												 if(data['porcentajeMenor']<=40)
 												 {
 													 document.getElementById("gota").setAttribute("src","img\\1.png");
 												 }
@@ -134,7 +158,7 @@ $('.calcular').click(function(){
 									 }
 								 }
 								 else{
-									 document.getElementById("gota").setAttribute("src","img\\5.png");
+									 document.getElementById("gota").setAttribute("src","img\\4.png");
 								 }
 
 

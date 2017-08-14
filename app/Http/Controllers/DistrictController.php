@@ -16,7 +16,7 @@ class DistrictController extends Controller
         //
         //$districts=District::All();
         $districts= District::orderBy('consumption', 'ASC')->orderBy('name', 'ASC')->get();
-        
+
         $names = District::orderBy('name', 'ASC')->get();
         $facturations = District::orderBy('facturation', 'ASC')->orderBy('name', 'ASC')->get();
         //return $facturations;
@@ -139,7 +139,7 @@ class DistrictController extends Controller
 
         $message= "En ".$minutes." minutos has usado el "
                   .$porcLower."% del agua que utiliza, al día, un vecino de "
-                  .$districtLower['name'].", el distrito con menos horas de agua al dia.";
+                  .$districtLower['name'].", el distrito con menos horas de agua al día.";
 
 
 
