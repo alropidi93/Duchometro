@@ -67,7 +67,7 @@ $('.calcular').click(function(){
 		document.getElementById("field_required").innerHTML ="";
 		minutes=Number(minutes);
 		minutes=Math.round(minutes) ;
-		if (minutes<0 || minutes>200 ){
+		if (minutes<0 || minutes>100 ){
 			$("#minutes").val("");
 			$("#minutes").attr('placeholder','Ingrese un valor válido');
 		}
@@ -99,10 +99,11 @@ $('.calcular').click(function(){
 							 {
 							 	count=count+countstep;
 
-							 	if (countstep > 0 && count < 200)
+							 	if (countstep > 0 && count < data['litros'])
 							 	{
 							 		color = '#467FFF';
 							 		ms = ms - step;
+
 							 		//countstep = 2;
 							 	}
 							 	else if( count > 78 ){
@@ -110,7 +111,7 @@ $('.calcular').click(function(){
 							 		ms = ms + step;
 							 	} else {
 							 		countstep = 2;
-							 		ms = 200;
+							 		ms = 150;
 							 	}
 							 	//var show = (count<100?count<10?'00':'0':'')+count;
 								var show = (count<100?count<10?'00':'0':'')+count;
