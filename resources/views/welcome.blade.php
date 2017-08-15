@@ -124,8 +124,8 @@
 			<text id="districtGraph" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
 
 
-			<rect width="{{$d->consumption*0.14}}%" x=29% height="14"></rect>
-			<text id="valueGraph" x="{{$d->consumption*0.14+30}}%" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
+			<rect width="{{$d->consumption*0.14}}%" x=30.5% height="14"></rect>
+			<text id="valueGraph" x="{{$d->consumption*0.14+31}}%" y="8" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
 
 		</g>
 
@@ -146,8 +146,8 @@
 
 			<text id="districtGraph2" textLenght="100%" x=0 y="12" fill="red" dy=".35em">{{$d->name}} </text>
 
-			<rect width="{{$d->facturation*0.14}}%" x=29% height="14"></rect>
-			<text id="valueGraph2" x="{{$d->facturation*0.14+30}}%" y="8" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
+			<rect width="{{$d->facturation*0.14}}%" x=30.5% height="14"></rect>
+			<text id="valueGraph2" x="{{$d->facturation*0.14+31}}%" y="8" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
 
 		</g>
 
