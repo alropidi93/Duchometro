@@ -67,7 +67,7 @@ $('.calcular').click(function(){
 		document.getElementById("field_required").innerHTML ="";
 		minutes=Number(minutes);
 		minutes=Math.round(minutes) ;
-		if (minutes<0 || minutes>1440 ){
+		if (minutes<0 || minutes>200 ){
 			$("#minutes").val("");
 			$("#minutes").attr('placeholder','Ingrese un valor válido');
 		}
@@ -99,7 +99,7 @@ $('.calcular').click(function(){
 							 {
 							 	count=count+countstep;
 
-							 	if (countstep > 0 && count < 1440)
+							 	if (countstep > 0 && count < 200)
 							 	{
 							 		color = '#467FFF';
 							 		ms = ms - step;
