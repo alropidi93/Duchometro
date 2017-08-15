@@ -110,14 +110,8 @@
 
 <div class="rank">
 	<div class="tab">
-		<button id="rank1">
-
-			Ranking de consumo (promedio) de agua por persona al día
-		</button>
-		<button id="rank2">
-
-			Ranking de pago mensual (por conexión formal de agua)
-		</button>
+		<button id="rank1">Ranking de consumo (promedio) de agua por persona al día</button>
+		<button id="rank2">Ranking de pago mensual (por conexión formal de agua)</button>
 	</div>
 
 <div id ="rankOne" style="display:block" >
