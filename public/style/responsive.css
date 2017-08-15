@@ -7,7 +7,10 @@
 	  text-anchor: start;
 		font-weight: bold;
 	}
-
+	#valueGraph, #valueGraph2{
+		font: 7px Avenir-Medium;
+		text-anchor: start;
+	}
 	.cover{
 		height: auto;
 		margin-left: 5%;
@@ -83,7 +86,7 @@
 		width:80%;
 
 		padding-right: 0px;
-		padding-left: 20px;
+		padding-left: 0px;
 		padding-top: 0px;
 		padding-bottom: 0px
 	}
@@ -374,7 +377,7 @@
 		width:80%;
 
 		padding-right: 0px;
-		padding-left: 20px;
+		padding-left: 0px;
 		padding-top: 0px;
 		padding-bottom: 0px
 	}
@@ -568,6 +571,8 @@
 	  font: 35% Avenir-Medium;
 	  text-anchor: start;
 	}
+
+
 	.data g{
 
    /*-ms-transform: translate(50px, 100px); /* IE 9 */
