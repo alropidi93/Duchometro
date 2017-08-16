@@ -60,7 +60,8 @@
 	}
 
 	.clari{
-		text-align: center;
+		text-align: left;
+		width: 100%;
 	}
 
 	.data {
@@ -351,7 +352,8 @@
 	}
 
 	.clari{
-		text-align: center;
+		text-align: left;
+		width:  100%;
 	}
 
 	.data {
