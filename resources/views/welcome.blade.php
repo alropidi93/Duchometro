@@ -65,7 +65,7 @@
 					<i class="fa fa-chevron-right" aria-hidden="true"></i>
 					Calcular
 				</button>
-				<p class="clari">Consumimos 7 lt de agua por minuto de ducha, según un cáculo conservador de <span>Sedapal</span> </p>
+				<p class="clari">Consumimos 7 lt de agua por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
 
 			</div>
 		</div>
