@@ -65,7 +65,8 @@
 					<i class="fa fa-chevron-right" aria-hidden="true"></i>
 					Calcular
 				</button>
-				<p class="clari">* <span>No</span> guardamos su información</p>
+				<p class="clari">Consumimos 7 lt de agua por minuto de ducha,<br> según un cáculo conservador de <span>Sedapal</span> </p>
+
 			</div>
 		</div>
 
@@ -121,7 +122,7 @@
 
 		<g transform="translate(0,{{$key*26}})" >
 
-			<text id="districtGraph" x=0 y="8" fill="red" dy=".35em">{{$d->name}} </text>
+			<text id="districtGraph"  y="8" fill="red" dy=".35em"><tspan x="29.5%" text-anchor="end">{{$d->name}}</tspan> </text>
 
 
 			<rect width="{{$d->consumption*0.14}}%" x=30.5% height="14"></rect>
@@ -144,7 +145,7 @@
 
 		<g transform="translate(0,{{$key*26}})">
 
-			<text id="districtGraph2" textLenght="100%" x=0 y="8" fill="red" dy=".35em">{{$d->name}} </text>
+			<text id="districtGraph2"  y="8" fill="red" dy=".35em"><tspan x="29.5%" text-anchor="end">{{$d->name}}</tspan></text>
 
 			<rect width="{{$d->facturation*0.14}}%" x=30.5%  height="14"></rect>
 			<text id="valueGraph2" x="{{$d->facturation*0.14+31}}%" y="7" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
