@@ -107,7 +107,7 @@
                 <li>
 
                     <a id="shareBtn"  target="_blank" class="btn btn-default btn-inverse"
-										href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp&p[title]=Compartir">
+										href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;src=sdkpreparse">
                         <i class="ico icon-facebook"></i>
                     </a>
 
