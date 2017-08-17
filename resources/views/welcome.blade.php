@@ -16,10 +16,10 @@
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:url"  content="https://waterdata.herokuapp.com/">
-	<meta property="og:type" content="website" >
-	<meta property="og:title" content="Duchómetro" >
-	<meta property="og:description" content="¿Cúanta agua gastas en la ducha?" >
+	<meta property="og:url"  content="https://waterdata.herokuapp.com/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Duchómetro" />
+	<meta property="og:description" content="¿Cúanta agua gastas en la ducha?" />
 
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
@@ -120,7 +120,7 @@
     								method: 'share',
 										display:'popup',
 										name: 'name',
-    							  caption: 'title',
+    							  title: 'title',
     							  description: 'des',
     								href: 'https://waterdata.herokuapp.com/',
   								}, function(response){
