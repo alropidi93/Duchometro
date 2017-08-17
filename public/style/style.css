@@ -537,7 +537,8 @@ h1 small{
 
 
 .social-bar li a {
-    padding: 3px 3px;
+		padding-top: 20%;
+
     color: #FFF;
     border: 0;
     font-size: 16px;
@@ -574,6 +575,7 @@ ul, ol {
 
 .social-bar li {
     display: inline-block;
+		height: 100%;
 
 }
 
