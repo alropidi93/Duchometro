@@ -2,13 +2,6 @@
 <html>
 <head lang="{{ config('app.locale') }}">
 	<meta charset="UTF-8">
-
-
-
-
-
-
-
 	<title>Water</title>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="description" content="">
@@ -20,6 +13,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Duchómetro Limeño" />
 	<meta property="og:description" content="¿A cuánto equivale tu ducha?" />
+	<meta property="og:image" content="img\1.png" />
 
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
