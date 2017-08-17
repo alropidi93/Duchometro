@@ -36,6 +36,7 @@ body {
 	font-family: 'Avenir-Medium';
 
 
+
 }
 h5 {
 		font-family: 'Avenir-Medium';
@@ -511,9 +512,9 @@ h1 small{
 }
 
 #footerOne ,#footerTwo{
-	font-weight: normal;
+	font-family: 'Avenir-Light';
 	color:black;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .ico:before{
@@ -572,5 +573,5 @@ ul, ol {
 
 .social-bar li {
     display: inline-block;
-		padding-top: 5%;
+
 }

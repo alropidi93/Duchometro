@@ -2,6 +2,16 @@
 <html>
 <head lang="{{ config('app.locale') }}">
 	<meta charset="UTF-8">
+
+<meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="When Great Minds Don’t Think Alike" />
+<meta property="og:description"        content="How much does culture influence creative thinking?" />
+<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+
+
+
 	<title>Water</title>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="description" content="">
@@ -169,24 +179,24 @@
 	</svg>
 </div>
 
-<br><br><br>
-<div id="footerOne" class="col-md-12 col-xs-12">
-  <p>
-    <b>Fuentes y/o observaciones:</b> 1. Sedapal, al calcular un consumo de 7 litros por minuto de ducha, consideró distintos tipos de llave así como que el usuario la cierra mientras se enjabona. Por esto último, hablamos de un cálculo conservador. 2. Los datos de consumo de agua fueron proporcionados por la Superintendencia Nacional de Servicios de Saneamiento (SUNASS), a la que Sedapal remite información periódica. Los datos corresponden a abril de 2017. El proceso de validación de esta información, de parte de la SUNASS, concluirá a fines de setiembre aproximadamente, según el regulador.
-  </p>
-</div>
 
-<div id ="footerTwo" class="col-md-12 col-xs-12">
-    <p>
-      <b >Créditos: </b>Idea: Elizabeth Lama y Luisa García. Coordinación: Luisa García. Desarrollo: Álvaro Rodrigo Picho. Agradecimientos a: Fabiola Torres y Jorge Miranda.
-    </p>
-</div>
 
 
 
 
 	</div>
+	<br><br><br>
+	<div id="footerOne" class="col-md-12 col-xs-12">
+	  <p>
+	    <b>Fuentes y/o observaciones:</b> 1. Sedapal, al calcular un consumo de 7 litros por minuto de ducha, consideró distintos tipos de llave así como que el usuario la cierra mientras se enjabona. Por esto último, hablamos de un cálculo conservador. 2. Los datos de consumo de agua fueron proporcionados por la Superintendencia Nacional de Servicios de Saneamiento (SUNASS), a la que Sedapal remite información periódica. Los datos corresponden a abril de 2017. El proceso de validación de esta información, de parte de la SUNASS, concluirá a fines de setiembre aproximadamente, según el regulador.
+	  </p>
+	</div>
 
+	<div id ="footerTwo" class="col-md-12 col-xs-12">
+	    <p>
+	      <b >Créditos: </b>Idea: Elizabeth Lama y Luisa García. Coordinación: Luisa García. Desarrollo: Álvaro Rodrigo Picho. Agradecimientos a: Fabiola Torres y Jorge Miranda.
+	    </p>
+	</div>
 </div>
 
 
