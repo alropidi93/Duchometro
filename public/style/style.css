@@ -538,7 +538,7 @@ h1 small{
 
 .social-bar li a {
 		padding-top: 20%;
-		
+
     color: #FFF;
     border: 0;
     font-size: 16px;
@@ -567,9 +567,9 @@ h1 small{
 }
 
 ul, ol {
-    margin-top: 0;
+    margin-top: 8%;
     margin-bottom: 10px;
-		padding-left: 0px;
+		margin-left: 10%;
 		position: relative;
 }
 
