@@ -3,11 +3,11 @@
 <head lang="{{ config('app.locale') }}">
 	<meta charset="UTF-8">
 
-<meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="When Great Minds Don’t Think Alike" />
-<meta property="og:description"        content="How much does culture influence creative thinking?" />
-<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+<meta property="og:url"                content="https://waterdata.herokuapp.com/" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Duchómetro" />
+<meta property="og:description"        content="¿Cúanta agua gastas en la ducha?" />
+<meta property="og:image"              content="public\img\1.png" />
 
 
 
@@ -27,6 +27,15 @@
 </head>
 <body>
 
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10&appId=429089130820281";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 <div class="cover">
 	<div class="animbot"></div><div class="animtop"></div>
@@ -79,14 +88,22 @@
 
 				<ul class="social-bar hidden-sm hidden-xs">
                 <li>
-                    <a href="" target="_BLANK" class="btn btn-default btn-inverse">
+                    <a id="shareBtn"  target="_BLANK" class="btn btn-default btn-inverse">
                         <i class="ico icon-facebook"></i>
                     </a>
                 </li>
                 <li><a href="" target="_BLANK" class="btn btn-default">
                         <i class="ico icon-twitter"></i>
-                    </a></li>
+                  </a></li>
           </ul>
+
+<div class="fb-share-button" data-href="https://waterdata.herokuapp.com" data-layout="button"
+ 	data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore"
+	target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;src=sdkpreparse">
+	Compartir</a></div>
+
+
+
 
 
 			</div>
@@ -199,6 +216,7 @@
 	    </p>
 	</div>
 </div>
+
 
 
 
