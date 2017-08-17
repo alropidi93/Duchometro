@@ -119,9 +119,7 @@
   								FB.ui({
     								method: 'share',
 										display:'popup',
-										name: 'name',
-    							  title: 'title',
-    							  description: 'des',
+									
     								href: 'https://waterdata.herokuapp.com/',
   								}, function(response){
 
