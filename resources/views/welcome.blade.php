@@ -17,7 +17,6 @@
 <body>
 
 
-
 <div class="cover">
 	<div class="animbot"></div><div class="animtop"></div>
 
@@ -65,7 +64,19 @@
 					<i class="fa fa-chevron-right" aria-hidden="true"></i>
 					Calcular
 				</button>
-				<p class="clari">Consumimos 7 lt de agua por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
+				<p class="clari">Consumimos 7 lt de <b>agua</b> por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
+
+				<ul class="social-bar hidden-sm hidden-xs">
+                <li>
+                    <a href="" target="_BLANK" class="btn btn-default btn-inverse">
+                        <i class="ico icon-facebook"></i>
+                    </a>
+                </li>
+                <li><a href="" target="_BLANK" class="btn btn-default">
+                        <i class="ico icon-twitter"></i>
+                    </a></li>
+          </ul>
+
 
 			</div>
 		</div>
@@ -112,7 +123,7 @@
 <div class="rank">
 	<div class="tab">
 		<button id="rank1">Ranking de consumo (promedio) de agua por persona al día</button>
-		<button id="rank2">Ranking de pago mensual (por conexión formal de agua)</button>
+		<button id="rank2">Ranking de % de usuarios con medidor activo</button>
 	</div>
 
 <div id ="rankOne" style="display:block" >
@@ -136,9 +147,9 @@
 </div>
 
 <div  id="rankTwo" style="display:none">
-	<svg class="chart"  id ="chartTwo" height="{{count($facturations)*26.2}}">
+	<svg class="chart"  id ="chartTwo" height="{{count($micromeditions)*26.2}}">
 
-		@foreach ($facturations as $key=>$d)
+		@foreach ($micromeditions as $key=>$d)
 
 
 
@@ -147,8 +158,8 @@
 
 			<text id="districtGraph2"  y="8" fill="red" dy=".35em"><tspan x="29.5%" text-anchor="end">{{$d->name}}</tspan></text>
 
-			<rect width="{{$d->facturation*0.14}}%" x=30.5%  height="14"></rect>
-			<text id="valueGraph2" x="{{$d->facturation*0.14+31}}%" y="7" fill="red" dy=".35em" >{{"S/. ".number_format($d->facturation,2)}}</text>
+			<rect width="{{floatval($d->micromedition)*0.4}}%" x=30.5%  height="14"></rect>
+			<text id="valueGraph2" x="{{floatval($d->micromedition)*0.4+31}}%" y="7" fill="red" dy=".35em" >{{number_format(floatval($d->micromedition),2)}}%</text>
 
 		</g>
 
@@ -156,17 +167,19 @@
 
 	</svg>
 </div>
-<h4 class="title">Fuente: Superintendencia Nacional de Servicios de Saneamiento (SUNASS)</h4>
+
+<br><br><br>
+<div id="footerOne" class="col-md-12 col-xs-12">
+  <p>
+    <b>Fuentes y/o observaciones:</b> 1. Sedapal, al calcular un consumo de 7 litros por minuto de ducha, consideró distintos tipos de llave así como que el usuario la cierra mientras se enjabona. Por esto último, hablamos de un cálculo conservador. 2. Los datos de consumo de agua fueron proporcionados por la Superintendencia Nacional de Servicios de Saneamiento (SUNASS), a la que Sedapal remite información periódica. Los datos corresponden a abril de 2017. El proceso de validación de esta información, de parte de la SUNASS, concluirá a fines de setiembre aproximadamente, según el regulador.
+  </p>
 </div>
 
-
-
-
-
-
-
-
-
+<div id ="footerTwo" class="col-md-12 col-xs-12">
+    <p>
+      <b >Créditos: </b>Idea: Elizabeth Lama y Luisa García. Coordinación: Luisa García. Desarrollo: Álvaro Rodrigo Picho. Agradecimientos a: Fabiola Torres y Jorge Miranda.
+    </p>
+</div>
 
 
 

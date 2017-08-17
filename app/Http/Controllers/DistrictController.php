@@ -18,14 +18,14 @@ class DistrictController extends Controller
         $districts= District::orderBy('consumption', 'ASC')->orderBy('name', 'ASC')->get();
 
         $names = District::orderBy('name', 'ASC')->get();
-        $facturations = District::orderBy('facturation', 'ASC')->orderBy('name', 'ASC')->get();
+        $micromeditions = District::orderBy('micromedition', 'ASC')->orderBy('name', 'ASC')->get();
         //return $facturations;
         //return compact('districts');
         // $districts[0];
 
 
 
-        return view('welcome',compact('districts'),compact('names'))->with(compact('facturations'));
+        return view('welcome',compact('districts'),compact('names'))->with(compact('micromeditions'));
     }
 
     /**
@@ -169,7 +169,7 @@ class DistrictController extends Controller
 
         $string=file_get_contents('D:\Alvaro\Documents\Absortio\Pagina web luisa\water\data\data.json');
         $json= json_decode($string,true);
-        return $json;
+
         // tengo los datos en json
 
 
@@ -183,6 +183,29 @@ class DistrictController extends Controller
               'facturation'=>$value['facturación'],
 
             ]);
+
+
+
+        }
+
+        //return $json[0]["micromedición"];
+    }
+
+    public function update_Data()
+    {
+        //
+
+        $string=file_get_contents('C:\xampp\htdocs\water\water\public\data\update.json');
+        $json= json_decode($string,true);
+
+        // tengo los datos en json
+
+
+        foreach ($json as $key => $value)
+        {
+            District::where('name',$value['distrito'])->update(['consumption'=>$value['consumo']
+                      ,'micromedition'=>$value['micromedición']]);
+
 
 
 

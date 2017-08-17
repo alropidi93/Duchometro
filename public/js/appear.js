@@ -38,7 +38,7 @@ $('#rank1').mouseover(function(){
 
 });
 $('#rank1').mouseout(function(){
-	document.getElementById("rank1").style.background="#467FFF";//volcemos al azul normal
+	document.getElementById("rank1").style.background="#467FFF";//volvemos al azul normal
 });
 	//document.getElementById("rankTwo").setAttribute("style","display:block");
 	//document.getElementById("rankOne").setAttribute("style","display:none");
