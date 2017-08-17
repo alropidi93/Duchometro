@@ -20,7 +20,7 @@
 	<meta property="og:type" content="website" >
 	<meta property="og:title" content="Duchómetro" >
 	<meta property="og:description" content="¿Cúanta agua gastas en la ducha?" >
-	<meta property="fb:app_id" content="429089130820281" >
+	
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -121,7 +121,7 @@
 										display:'popup',
     								href: 'https://waterdata.herokuapp.com/',
   								}, function(response){
-										
+
 									});
 								}
 								</script>
