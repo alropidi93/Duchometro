@@ -517,7 +517,7 @@ h1 small{
 }
 
 .ico:before{
-	font-family:"socials";
+	font-family:"Duchometro";
 	font-style:normal;
 	font-weight:normal;
 	speak:none;
@@ -533,9 +533,7 @@ h1 small{
 }
 
 
-.icon-gplus:before{content:'\e800';}
-.icon-twitter:before{content:'\e808';}
-.icon-facebook:before{content:'\e809';}
+
 
 .social-bar li a {
     padding: 6px 3px;
@@ -574,4 +572,5 @@ ul, ol {
 
 .social-bar li {
     display: inline-block;
+		padding-top: 5%;
 }

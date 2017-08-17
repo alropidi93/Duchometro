@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Duchometro';
+  src:  url('Duchometro.eot?w9je2a');
+  src:  url('Duchometro.eot?w9je2a#iefix') format('embedded-opentype'),
+    url('Duchometro.ttf?w9je2a') format('truetype'),
+    url('Duchometro.woff?w9je2a') format('woff'),
+    url('Duchometro.svg?w9je2a#Duchometro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Duchometro' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\e901";
+}
