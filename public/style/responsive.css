@@ -1,6 +1,13 @@
 
 @media screen and (max-width: 565px) {
+	.data #footerOne  p{
 
+		font-size: 12px;
+	}
+	.data #footerTwo  p{
+
+		font-size: 12px;
+	}
 	.chart text {
 	  fill: black;
 	  font: 20% Avenir-Medium;
@@ -303,6 +310,14 @@
 
 @media screen and (max-width: 992px) and (min-width:565px){
 
+	.data #footerOne  p{
+
+		font-size: 14px;
+	}
+	.data #footerTwo  p{
+
+		font-size: 14px;
+	}
 	.cover{
 		height: auto;
 
