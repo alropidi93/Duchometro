@@ -1,5 +1,13 @@
 
 @media screen and (max-width: 565px) {
+	ul, ol {
+			margin-top: 5%;
+			margin-bottom: 5%;
+			margin-left: 40%;
+
+			position: relative;
+	}
+
 	.data #footerOne  p{
 
 		font-size: 12px;
@@ -66,6 +74,8 @@
 		text-align: center;
 
 	}
+
+
 
 	.clari{
 		text-align: left;
@@ -309,6 +319,13 @@
 }
 
 @media screen and (max-width: 992px) and (min-width:565px){
+	ul, ol {
+			margin-top: 5%;
+			margin-bottom: 5%;
+			margin-left: 40%;
+
+			position: relative;
+	}
 
 	.data #footerOne  p{
 

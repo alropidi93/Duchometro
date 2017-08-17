@@ -103,11 +103,11 @@
 				</button>
 				<p class="clari">Consumimos 7 lt de <b>agua</b> por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
 
-				<ul class="social-bar hidden-sm hidden-xs">
+				<ul class="social-bar">
                 <li>
 
                     <a id="shareBtn"  target="_blank" class="btn btn-default btn-inverse"
-										href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;src=sdkpreparse">
+										>
                         <i class="ico icon-facebook"></i>
                     </a>
 
@@ -132,7 +132,7 @@
 
 
                 <li><a href="https://twitter.com/intent/tweet?hashtags=example%2Cdemo&amp;original_referer=http%3A%2F%2Flocalhost%3A8000%2F&amp;ref_src=twsrc%5Etfw&amp;text=%C2%BFA%20cu%C3%A1nto%20equivale%20tu%20ducha%3F&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;via=SPeriodismoPUCP"
-									
+
 									class="btn btn-default"
 									>
                         <i class="ico icon-twitter"></i>
