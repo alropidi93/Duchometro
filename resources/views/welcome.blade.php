@@ -13,7 +13,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Duchómetro Limeño" />
 	<meta property="og:description" content="¿A cuánto equivale tu ducha?" />
-	<meta property="og:image" content="https://thumb.ibb.co/e7ah4v/Imagen1.png" />
+	<meta property="og:image" content="https://image.ibb.co/fuMN4v/Imagen2.png" />
 
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
