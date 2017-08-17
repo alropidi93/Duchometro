@@ -3,11 +3,8 @@
 <head lang="{{ config('app.locale') }}">
 	<meta charset="UTF-8">
 
-<meta property="og:url"                content="https://waterdata.herokuapp.com/" />
-<meta property="og:type"               content="website" />
-<meta property="og:title"              content="Duchómetro" />
-<meta property="og:description"        content="¿Cúanta agua gastas en la ducha?" />
-<meta property="og:image"              content="public\img\1.png" />
+
+
 
 
 
@@ -18,6 +15,12 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:url"  content="https://waterdata.herokuapp.com/">
+	<meta property="og:type" content="website" >
+	<meta property="og:title" content="Duchómetro" >
+	<meta property="og:description" content="¿Cúanta agua gastas en la ducha?" >
+	<meta property="fb:app_id" content="429089130820281" >
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -27,15 +30,29 @@
 </head>
 <body>
 
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.10&appId=429089130820281";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
+
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId            : '429089130820281',
+	      autoLogAppEvents : true,
+	      xfbml            : true,
+	      version          : 'v2.10'
+
+
+	    });
+	    FB.AppEvents.logPageView();
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
 	</script>
+
 
 <div class="cover">
 	<div class="animbot"></div><div class="animtop"></div>
@@ -88,20 +105,48 @@
 
 				<ul class="social-bar hidden-sm hidden-xs">
                 <li>
-                    <a id="shareBtn"  target="_BLANK" class="btn btn-default btn-inverse">
+
+                    <a id="shareBtn"  target="_blank" class="btn btn-default btn-inverse"
+										href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;src=sdkpreparse">
                         <i class="ico icon-facebook"></i>
                     </a>
+
                 </li>
-                <li><a href="" target="_BLANK" class="btn btn-default">
+
+								<script>
+
+								document.getElementById('shareBtn').onclick = function() {
+  								FB.ui({
+    								method: 'share',
+										display:'popup',
+    								href: 'https://waterdata.herokuapp.com/',
+  								}, function(response){
+										
+									});
+								}
+								</script>
+
+
+
+                <li><a href="https://twitter.com/intent/tweet"
+									target="_blank"
+									class="btn btn-default"
+									data-hashtags="example,demo"
+									data-text="¿A cuánto equivale tu ducha?"
+									data-url="https://waterdata.herokuapp.com/"
+									data-via="SPeriodismoPUCP">
                         <i class="ico icon-twitter"></i>
                   </a></li>
           </ul>
 
-<div class="fb-share-button" data-href="https://waterdata.herokuapp.com" data-layout="button"
- 	data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore"
-	target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;src=sdkpreparse">
-	Compartir</a></div>
-
+					<a class="twitter-share-button"
+					  href="https://twitter.com/intent/tweet"
+						data-hashtags="example,demo"
+						data-text="¿A cuánto equivale tu ducha?"
+						data-url="https://waterdata.herokuapp.com/"
+						data-via="SPeriodismoPUCP"
+						data-size="large">
+					Tweet </a>
 
 
 
@@ -228,6 +273,25 @@
 <script src="js/appear.js" type="text/javascript"></script>
 <script src="js/options.js" type="text/javascript"></script>
 <script src="js/json.js" type="text/javascript"></script>
+
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
 
 </body>
 </html>
