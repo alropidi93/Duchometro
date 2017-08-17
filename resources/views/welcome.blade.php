@@ -131,30 +131,15 @@
 
 
 
-                <li><a href="https://twitter.com/intent/tweet"
-									target="_blank"
+                <li><a href="https://twitter.com/intent/tweet?hashtags=example%2Cdemo&amp;original_referer=http%3A%2F%2Flocalhost%3A8000%2F&amp;ref_src=twsrc%5Etfw&amp;text=%C2%BFA%20cu%C3%A1nto%20equivale%20tu%20ducha%3F&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;via=SPeriodismoPUCP"
+									
 									class="btn btn-default"
-									data-hashtags="example,demo"
-									data-text="¿A cuánto equivale tu ducha?"
-									data-url="https://waterdata.herokuapp.com/"
-									data-via="SPeriodismoPUCP">
+									>
                         <i class="ico icon-twitter"></i>
                   </a></li>
           </ul>
 
-					<a class="twitter-share-button"
-					  href="https://twitter.com/intent/tweet"
-						data-hashtags="example,demo"
-						data-text="¿A cuánto equivale tu ducha?"
-						data-url="https://waterdata.herokuapp.com/"
-						data-via="SPeriodismoPUCP"
-						data-size="large">
-					Tweet </a>
-
-
-
-
-			</div>
+				</div>
 		</div>
 
 		<div class="arrow" >
