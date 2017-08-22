@@ -23,12 +23,11 @@ $('#rank2').click(function(){
 
 $('#rank2').mouseover(function(){
 	console.log("encima de rank2");
-	document.getElementById("rank2").style.background="#ff5274";//aclaramos el guinda
-
+	document.getElementById("rank2").style.background="#f1be5b";//aclaramos el naranja
 
 });
 $('#rank2').mouseout(function(){
-	document.getElementById("rank2").style.background="#DC143C";//volvemos al guinda normal
+	document.getElementById("rank2").style.background="#e69802";//volvemos al naranja normal
 });
 
 $('#rank1').mouseover(function(){
@@ -67,7 +66,7 @@ $('.calcular').click(function(){
 		document.getElementById("field_required").innerHTML ="";
 		minutes=Number(minutes);
 		minutes=Math.round(minutes) ;
-		if (minutes<0 || minutes>100 ){
+		if (minutes <= 0 || minutes>=100 ){
 			$("#minutes").val("");
 			$("#minutes").attr('placeholder','Ingrese un valor válido');
 		}
@@ -115,8 +114,8 @@ $('.calcular').click(function(){
 							 	}
 							 	//var show = (count<100?count<10?'00':'0':'')+count;
 								var show = (count<100?count<10?'00':'0':'')+count;
-							 	if( count > 150 ) color = '#DC143C'; //color guinda
-							 	else color = '#467FFF';//color azul
+							 	//if( count > 150 ) color = '#DC143C'; //color guinda
+							 	color = '#467FFF';//color azul
 							 	$('#temperature').html('<i class="fa fa-tint" aria-hidden="true"></i>'+show+"<span>Lts</span>").css('color',color) ; // watch for spelling
 								if (Number(show)==data['litros']) return;
 								counter = setTimeout(timer, ms);

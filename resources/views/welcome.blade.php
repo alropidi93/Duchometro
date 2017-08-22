@@ -95,7 +95,7 @@
 					<i class="fa fa-chevron-right" aria-hidden="true"></i>
 					Calcular
 				</button>
-				<p class="clari">Consumimos 7 lt de <b>agua</b> por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
+				<p class="clari">Consumimos 7 Lts de <b>agua</b> por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
 
 				<ul class="social-bar">
                 <li>
@@ -176,7 +176,7 @@
 <div class="rank">
 	<div class="tab">
 		<button id="rank1">Ranking de consumo (promedio) de agua por persona al día</button>
-		<button id="rank2">Ranking de % de usuarios con medidor activo</button>
+		<button id="rank2">Ranking de pago mensual por conexión formal</button>
 	</div>
 
 <div id ="rankOne" style="display:block" >
@@ -200,9 +200,9 @@
 </div>
 
 <div  id="rankTwo" style="display:none">
-	<svg class="chart"  id ="chartTwo" height="{{count($micromeditions)*26.2}}">
+	<svg class="chart"  id ="chartTwo" height="{{count($facturations)*26.2}}">
 
-		@foreach ($micromeditions as $key=>$d)
+		@foreach ($facturations as $key=>$d)
 
 
 
@@ -211,8 +211,8 @@
 
 			<text id="districtGraph2"  y="8" fill="red" dy=".35em"><tspan x="29.5%" text-anchor="end">{{$d->name}}</tspan></text>
 
-			<rect width="{{floatval($d->micromedition)*0.4}}%" x=30.5%  height="14"></rect>
-			<text id="valueGraph2" x="{{floatval($d->micromedition)*0.4+31}}%" y="7" fill="red" dy=".35em" >{{number_format(floatval($d->micromedition),2)}}%</text>
+			<rect width="{{$d->facturation*0.13}}%" x=30.5%  height="14"></rect>
+			<text id="valueGraph2" x="{{$d->facturation*0.13+31}}%" y="7" fill="red" dy=".35em" >S/.{{number_format(floatval($d->facturation),2)}}</text>
 
 		</g>
 

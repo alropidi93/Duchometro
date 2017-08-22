@@ -79,7 +79,7 @@ h4 {
 }
 
 #chartTwo rect{
-	fill:#DC143C;
+	fill:#e69802;
 }
 
 
@@ -269,7 +269,7 @@ h4 {
 
 #rank2{
 
-	background: #DC143C;
+	background: #e69802;
 	color: white;
 	border: none;
 	border-radius: 3px;
@@ -316,7 +316,7 @@ h4 {
 #text2{
 	display: table;
 	padding:2%;
-	background: #DC143C;
+	background: #e69802;
 	color: white;
 	border: none;
 	vertical-align: middle;

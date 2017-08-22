@@ -16,3 +16,5 @@ Route::get('/', 'DistrictController@index');
 //Route::get('datos', 'DistrictController@insert_Data');
 Route::get('reporte', 'DistrictController@get_Report');
 //Route::get('update','DistrictController@update_Data');
+
+//Route::get('updateWhole','DistrictController@update_wholeData');
