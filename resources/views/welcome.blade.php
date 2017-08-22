@@ -55,7 +55,7 @@
 			<div class="col-md-7 right">
 				<h1>
 					<img src="img/shower.png">
-					<span id="temperature"><i class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
+					<span id="temperature"><i id="little-drop"class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
 					Duchómetro limeño<br>
 					<small>¿A cuánto equivale tu ducha?</small>
 				</h1>
@@ -142,7 +142,7 @@
 	<div class="data" id ="data_div">
 		<div class="container">
 
-			<div id="text1">
+			<div id="text1" class="triangle-rectangle-one" >
 				<div id="mess2">
 					Has utilizado el <span ><b id="porc"></b>%
 					</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
@@ -153,20 +153,20 @@
 
 
 
-			<div class="contenedor">
-				<div id="text2" >
+
+				<div class="triangle-rectangle-two" id="text2"  >
 
 					<b id="mess"></b>
 				</div>
+				<!--
 				<div class="drop">
 					<img id="gota"  src="">
 				</div>
 			</div>
 
+			-->
 
 
-
-		</div>
 
 
 

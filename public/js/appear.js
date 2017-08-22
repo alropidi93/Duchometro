@@ -100,22 +100,29 @@ $('.calcular').click(function(){
 
 							 	if (countstep > 0 && count < data['litros'])
 							 	{
-							 		color = '#467FFF';
-							 		ms = ms - step;
+							 		color = '#008744';//color verde
+							 		ms = ms - step; //lo hago más veloz
 
 							 		//countstep = 2;
 							 	}
 							 	else if( count > 78 ){
 							 		//countstep = -2;
-							 		ms = ms + step;
+							 		ms = ms + step;// lo hago más lento
 							 	} else {
 							 		countstep = 2;
 							 		ms = 150;
 							 	}
 							 	//var show = (count<100?count<10?'00':'0':'')+count;
 								var show = (count<100?count<10?'00':'0':'')+count;
-							 	//if( count > 150 ) color = '#DC143C'; //color guinda
-							 	color = '#467FFF';//color azul
+							 	if( count > 70 ){
+									color = '#d62d20';//color rojo
+								}  //color guinda
+								else if (count<36){
+									color = '#008744';//color verde
+								}
+							 	else
+									color = '#ffa700';//color amarillo
+
 							 	$('#temperature').html('<i class="fa fa-tint" aria-hidden="true"></i>'+show+"<span>Lts</span>").css('color',color) ; // watch for spelling
 								if (Number(show)==data['litros']) return;
 								counter = setTimeout(timer, ms);
@@ -129,7 +136,7 @@ $('.calcular').click(function(){
 							 document.getElementById("porc").innerHTML=data['porcentaje'];
 							 document.getElementById("mess").innerHTML=data['mensaje'];
 
-
+							 /*
 							  console.log(data['porcentajeMenor']);
 								 if(data['porcentajeMenor']<=100)
 								 {
@@ -161,7 +168,7 @@ $('.calcular').click(function(){
 									 document.getElementById("gota").setAttribute("src","img\\4.png");
 								 }
 
-
+								 */
 
 
 
