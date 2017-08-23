@@ -23,11 +23,11 @@ $('#rank2').click(function(){
 
 $('#rank2').mouseover(function(){
 	console.log("encima de rank2");
-	document.getElementById("rank2").style.background="#f1be5b";//aclaramos el naranja
+	document.getElementById("rank2").style.background="#d8d5d5";//aclaramos el plomo
 
 });
 $('#rank2').mouseout(function(){
-	document.getElementById("rank2").style.background="#fc8a04";//volvemos al naranja normal
+	document.getElementById("rank2").style.background="#a9a9a9";//volvemos al plomo normal
 });
 
 $('#rank1').mouseover(function(){

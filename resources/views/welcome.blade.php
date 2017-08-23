@@ -2,7 +2,7 @@
 <html>
 <head lang="{{ config('app.locale') }}">
 	<meta charset="UTF-8">
-	<title>Water</title>
+	<title>Duchometro Limeño</title>
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -13,8 +13,11 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Duchómetro Limeño" />
 	<meta property="og:description" content="¿A cuánto equivale tu ducha?" />
-	<meta property="og:image" content="{{asset('img/share.png')}}" />
 
+	<link rel="icon" href="{{{ asset('img/sp2.png') }}}">
+
+
+	<link href="{{{ asset('img/sp.png') }}}" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -57,6 +60,15 @@
 					<img src="img/shower.png">
 					<span id="temperature"><i id="little-drop" class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
 					<p>Duchómetro limeño</p>
+					<div class="legend">
+						<div id="colorList">
+							<i id="green" class="fa fa-tint" aria-hidden="true"></i><h2>Hasta 35 lts</h2>
+							<i id="yellow" class="fa fa-tint" aria-hidden="true"></i><h2>36 a 70 lts</h2>
+							<i id="red" class="fa fa-tint" aria-hidden="true"></i><h2>71 lts a más</h2>
+						</div>
+
+					</div>
+
 					<p><small>¿A cuánto equivale tu ducha?</small></p>
 				</h1>
 			</div>
