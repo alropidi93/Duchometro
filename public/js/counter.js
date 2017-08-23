@@ -1,7 +1,7 @@
 var count = 78;
 var ms = 200;
 var step = 1;
-var counter=setTimeout(changeColor, ms); //1000 will  run it every 1 second
+var counter=setTimeout(changeColor, 1000); //1000 will  run it every 1 second
 var  color;
 var countstep = 1;
 function changeColor()
@@ -19,13 +19,13 @@ function changeColor()
 		//ms = ms + step;
 	} else {
 		countstep = 2;
-		ms = 200;
+		//ms = 200;
 	}
 
 	if( count % 3 == 0 ) color = '#008744';//verde
-	else if ((count-1) %3==0) color = '#ffa700';//amarillo
+	else if ((count-1) %3==0) color = '#f7da19';//amarillo
   else if ((count-2) %3==0) color = '#d62d20';//rojo
 
 	$('#little-drop').html('').css('color',color) ; // watch for spelling
-	counter = setTimeout(changeColor, ms);
+	counter = setTimeout(changeColor, 1000);
 }

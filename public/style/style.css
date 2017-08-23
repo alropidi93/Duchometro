@@ -79,7 +79,7 @@ h4 {
 }
 
 #chartTwo rect{
-	fill:#e69802;
+	fill:#fc8a04;
 }
 
 
@@ -270,7 +270,7 @@ h4 {
 
 #rank2{
 
-	background: #e69802;
+	background:#fc8a04;
 	color: white;
 	border: none;
 	border-radius: 3px;
@@ -319,7 +319,7 @@ h4 {
 #text2{
 	display: table;
 	padding:2%;
-	background: #e69802;
+	background: #fc8a04;
 	color: white;
 	border: none;
 	vertical-align: middle;
@@ -630,8 +630,8 @@ ul, ol {
 		height: 0;
 		border-right: 25px solid transparent;
 		border-bottom:  25px solid transparent;
-		border-left: 25px solid #e69802;
-		border-top: 25px solid #e69802;
+		border-left: 25px solid #fc8a04;
+		border-top: 25px solid #fc8a04;
 		left: 10%;
 		top: 100%;
 		position: absolute;

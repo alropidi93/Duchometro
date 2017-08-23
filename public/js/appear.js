@@ -27,7 +27,7 @@ $('#rank2').mouseover(function(){
 
 });
 $('#rank2').mouseout(function(){
-	document.getElementById("rank2").style.background="#e69802";//volvemos al naranja normal
+	document.getElementById("rank2").style.background="#fc8a04";//volvemos al naranja normal
 });
 
 $('#rank1').mouseover(function(){
@@ -45,8 +45,11 @@ $('#rank1').mouseout(function(){
 
 
 
-$('.calcular').click(function(){
-
+$('.calcular').click(function(e){
+	if (typeof animationD !== 'undefined'){
+		clearTimeout(animationD);
+		console.log("borro");
+	}
 	var id_district, minutes,name;
 	id_district=$(this).parent().parent().find('.sel').attr('id');
 	name=$(this).parent().parent().find('.sel').html();
@@ -121,12 +124,31 @@ $('.calcular').click(function(){
 									color = '#008744';//color verde
 								}
 							 	else
-									color = '#ffa700';//color amarillo
+									color = '#f7da19';//color amarillo
 
 							 	$('#temperature').html('<i class="fa fa-tint" aria-hidden="true"></i>'+show+"<span>Lts</span>").css('color',color) ; // watch for spelling
 								if (Number(show)==data['litros']) return;
 								counter = setTimeout(timer, ms);
 							 }
+							 var icons=document.getElementsByTagName("i")
+							 var countDrop=0;
+							 animationDrop = function(){
+
+
+								 if (countDrop%2==0)
+								 		icons[0].style.display='none';
+								 else{
+
+									 icons[0].style.display='inline-block';
+								 }
+								 if (countDrop==100)
+								 		countDrop=0;
+								countDrop++;
+
+
+							 }
+
+							 var animationD=setInterval(animationDrop, 1000);
 
 
 							 //document.getElementById("min").innerHTML = data['min'] + " minutos";

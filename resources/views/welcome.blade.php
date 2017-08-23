@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:url"  content="https://waterdata.herokuapp.com/" />
+	<meta property="og:url"  content="https://duchometrolimeno.somosperiodismo.com/" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Duchómetro Limeño" />
 	<meta property="og:description" content="¿A cuánto equivale tu ducha?" />
@@ -55,9 +55,9 @@
 			<div class="col-md-7 right">
 				<h1>
 					<img src="img/shower.png">
-					<span id="temperature"><i id="little-drop"class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
-					Duchómetro limeño<br>
-					<small>¿A cuánto equivale tu ducha?</small>
+					<span id="temperature"><i id="little-drop" class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
+					<p>Duchómetro limeño</p>
+					<p><small>¿A cuánto equivale tu ducha?</small></p>
 				</h1>
 			</div>
 			<div class="col-md-5 ">
@@ -114,7 +114,7 @@
     								method: 'share',
 										display:'popup',
 
-    								href: 'https://waterdata.herokuapp.com/',
+    								href: 'https://duchometrolimeno.somosperiodismo.com/',
   								}, function(response){
 
 									});
@@ -123,7 +123,7 @@
 
 
 
-                <li><a href="https://twitter.com/intent/tweet?hashtags=example%2Cdemo&amp;original_referer=http%3A%2F%2Flocalhost%3A8000%2F&amp;ref_src=twsrc%5Etfw&amp;text=%C2%BFA%20cu%C3%A1nto%20equivale%20tu%20ducha%3F&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fwaterdata.herokuapp.com%2F&amp;via=SPeriodismoPUCP"
+                <li><a href="https://twitter.com/intent/tweet?hashtags=DuchómetroLimeño&amp;original_referer=http%3A%2F%2Flocalhost%3A8000%2F&amp;ref_src=twsrc%5Etfw&amp;text=%C2%BFA%20cu%C3%A1nto%20equivale%20tu%20ducha%3F&amp;tw_p=tweetbutton&amp;url=http%3A%2F%2Fduchometrolimeno.somosperiodismo.com%2F&amp;via=SPeriodismoPUCP"
 
 									class="btn btn-default"
 									>
