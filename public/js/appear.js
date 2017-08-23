@@ -46,6 +46,7 @@ $('#rank1').mouseout(function(){
 
 
 $('.calcular').click(function(e){
+
 	if (typeof animationD !== 'undefined'){
 		clearTimeout(animationD);
 		console.log("borro");
@@ -59,9 +60,11 @@ $('.calcular').click(function(e){
 
 
 	if (name=="Seleccionar"){
+		e.preventDefault();
 		document.getElementById("field_required").innerHTML ="Elija un distrito";
 	}
 	else if (!minutes){
+		e.preventDefault();
 		document.getElementById("field_required").innerHTML ="";
 		$("#minutes").attr('placeholder','Ingrese un valor');
 	}
@@ -158,39 +161,7 @@ $('.calcular').click(function(e){
 							 document.getElementById("porc").innerHTML=data['porcentaje'];
 							 document.getElementById("mess").innerHTML=data['mensaje'];
 
-							 /*
-							  console.log(data['porcentajeMenor']);
-								 if(data['porcentajeMenor']<=100)
-								 {
-									 if(data['porcentajeMenor']<=80)
-									 {
 
-											 if(data['porcentajeMenor']<=60)
-											 {
-												 if(data['porcentajeMenor']<=40)
-												 {
-													 document.getElementById("gota").setAttribute("src","img\\1.png");
-												 }
-												 else{
-													 document.getElementById("gota").setAttribute("src","img\\2.png");
-												 }
-											 }
-											 else{
-												 	document.getElementById("gota").setAttribute("src","img\\3.png");
-											 }
-
-
-
-									 }
-									 else{
-										 	document.getElementById("gota").setAttribute("src","img\\4.png");
-									 }
-								 }
-								 else{
-									 document.getElementById("gota").setAttribute("src","img\\4.png");
-								 }
-
-								 */
 
 
 
@@ -202,6 +173,8 @@ $('.calcular').click(function(e){
 						 		$('.arrow').slideDown('slow');
 
 						 	});
+
+
 			       },
 
 			       error: function() {

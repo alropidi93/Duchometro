@@ -91,10 +91,11 @@
 						<input id="minutes" type="number"   autocomplete="off" placeholder="Ej: 15">
 					</div>
 				</div>
-				<button class="calcular">
+
+				<a id="viewLiters" href="#"><button  class="calcular">
 					<i class="fa fa-chevron-right" aria-hidden="true"></i>
 					Calcular
-				</button>
+				</button></a>
 				<p class="clari">Consumimos 7 Lts de <b>agua</b> por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
 
 				<ul class="social-bar">
