@@ -9,15 +9,17 @@
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta property="og:url"  content="https://duchometrolimeno.somosperiodismo.com/" />
+	<meta property="og:url"  content="http://duchometrolimeno.somosperiodismo.com/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Duchómetro Limeño" />
+	<meta property="og:title" content="Duchómetro limeño" />
 	<meta property="og:description" content="¿A cuánto equivale tu ducha?" />
+	<meta property="og:image" content="{{{ asset('img/share.png') }}}" />
+	<meta property="fb:app_id" content="429089130820281" />
 
 	<link rel="icon" href="{{{ asset('img/sp2.png') }}}">
 
 
-	<link href="{{{ asset('img/sp.png') }}}" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -58,13 +60,13 @@
 			<div class="col-md-7 right">
 				<h1>
 					<img src="img/shower.png">
-					<span id="temperature"><i id="little-drop" class="fa fa-tint" aria-hidden="true"></i>000<span>Lts</span></span>
+					<span id="temperature"><i id="little-drop" class="fa fa-tint" aria-hidden="true"></i>000<span>Litros</span></span>
 					<p>Duchómetro limeño</p>
 					<div class="legend">
 						<div id="colorList">
-							<i id="green" class="fa fa-tint" aria-hidden="true"></i><h2>Hasta 35 lts</h2>
-							<i id="yellow" class="fa fa-tint" aria-hidden="true"></i><h2>36 a 70 lts</h2>
-							<i id="red" class="fa fa-tint" aria-hidden="true"></i><h2>71 lts a más</h2>
+							<i id="green" class="fa fa-tint" aria-hidden="true"></i><h2>Hasta 35 litros</h2>
+							<i id="yellow" class="fa fa-tint" aria-hidden="true"></i><h2>36 a 70 litros</h2>
+							<i id="red" class="fa fa-tint" aria-hidden="true"></i><h2>71 litros a más</h2>
 						</div>
 
 					</div>
@@ -104,11 +106,11 @@
 					</div>
 				</div>
 
-				<a id="viewLiters" href="#"><button  class="calcular">
+				<a id="viewLiters" href="#"><button  id="calc" class="calcular">
 					<i class="fa fa-chevron-right" aria-hidden="true"></i>
 					Calcular
 				</button></a>
-				<p class="clari">Consumimos 7 Lts de <b>agua</b> por minuto de ducha, según un cálculo conservador de <span>Sedapal</span> </p>
+				<p class="clari">Consumimos 7 litros de <b>agua</b> por minuto de ducha en promedio, según <span>Sedapal.</span></p>
 
 				<ul class="social-bar">
                 <li>
@@ -127,7 +129,7 @@
     								method: 'share',
 										display:'popup',
 
-    								href: 'https://duchometrolimeno.somosperiodismo.com/',
+    								href: 'http://duchometrolimeno.somosperiodismo.com/',
   								}, function(response){
 
 									});
@@ -136,7 +138,7 @@
 
 
 
-                <li><a href="https://twitter.com/intent/tweet?hashtags=DuchómetroLimeño&amp;original_referer=http%3A%2F%2Flocalhost%3A8000%2F&amp;ref_src=twsrc%5Etfw&amp;text=%C2%BFA%20cu%C3%A1nto%20equivale%20tu%20ducha%3F&amp;tw_p=tweetbutton&amp;url=http%3A%2F%2Fduchometrolimeno.somosperiodismo.com%2F&amp;via=SPeriodismoPUCP"
+                <li><a  href="https://twitter.com/intent/tweet?hashtags=;original_referer=http%3A%2F%2Fduchometrolimeno.somosperiodismo.com%2F&amp;ref_src=twsrc%5Etfw&amp;text=%23DuchometroLimeño%20%C2%BFA%20cu%C3%A1nto%20equivale%20tu%20ducha%3F&amp;tw_p=tweetbutton&amp;url=http%3A%2F%2Fduchometrolimeno.somosperiodismo.com%2F&amp;via=SPeriodismoPUCP"
 
 									class="btn btn-default"
 									>
@@ -158,7 +160,7 @@
 			<div id="text1" class="triangle-rectangle-one" >
 				<div id="mess2">
 					Has utilizado el <span ><b id="porc"></b>%
-					</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> lt), en promedio.
+					</span> de lo que gasta una persona en <b id="district"></b> al día (<b id="consume"></b> litros), en promedio.
 
 				</div>
 
@@ -184,9 +186,9 @@
 
 
 
-
-
 <div class="rank">
+
+	<hr class="hrThick">
 	<div class="tab">
 		<button id="rank1">Ranking de consumo (promedio) de agua por persona al día</button>
 		<button id="rank2">Ranking de pago mensual por conexión formal</button>
@@ -203,7 +205,7 @@
 
 
 			<rect width="{{$d->consumption*0.14}}%" x=30.5% height="14"></rect>
-			<text id="valueGraph" x="{{$d->consumption*0.14+31}}%" y="6" fill="red" dy=".35em" >{{$d->consumption}} lts.</text>
+			<text id="valueGraph" x="{{$d->consumption*0.14+31}}%" y="6" fill="red" dy=".35em" >{{$d->consumption}} litros</text>
 
 		</g>
 
@@ -244,13 +246,13 @@
 	<hr class="hrThick">
 	<div id="footerOne" class="col-md-12 col-xs-12">
 	  <p>
-	    <b>FUENTES Y OBSERVACIONES:</b> 1. Sedapal, al calcular un consumo de 7 litros por minuto de ducha, consideró distintos tipos de llave así como que el usuario la cierra mientras se enjabona. Por esto último, hablamos de un cálculo conservador. 2. Los datos de consumo de agua fueron proporcionados por la Superintendencia Nacional de Servicios de Saneamiento (SUNASS), a la que Sedapal remite información periódica. Los datos corresponden a abril de 2017. El proceso de validación de esta información, de parte de la SUNASS, concluirá a fines de setiembre aproximadamente, según el regulador.
+	    <b>FUENTES Y OBSERVACIONES:</b> 1. Sedapal, al calcular un consumo de 7 litros por minuto de ducha, consideró distintos tipos de llave así como que el usuario la cierra mientras se enjabona. Por esto último, hablamos de un cálculo conservador. 2. Los <a target="_blank" href="https://drive.google.com/file/d/0B0y8VyKXLhnZajhFNjlweXVZTWM/view?usp=sharing">datos de consumo de agua</a> fueron proporcionados por la Superintendencia Nacional de Servicios de Saneamiento (SUNASS), a la que Sedapal remite información periódica. Los datos corresponden a abril de 2017. El proceso de validación de esta información, de parte de la SUNASS, concluirá a fines de setiembre aproximadamente, según el regulador. 3. En los datos del pago mensual por conexión formal, se consideró la facturación promedio de todas las categorías de usuarios: social, doméstico, comercial, industrial y estatal.
 	  </p>
 	</div>
 
 	<div id ="footerTwo" class="col-md-12 col-xs-12">
 	    <p>
-	      <b >CRÉDITOS: </b>Idea: Elizabeth Lama y Luisa García. Coordinación: Luisa García. Desarrollo: Álvaro Rodrigo Picho. Agradecimientos a: Fabiola Torres y Jorge Miranda.
+	      <b >CRÉDITOS: </b>Idea: Elizabeth Lama y Luisa García. Coordinación: Luisa García. Desarrollo: Álvaro Rodrigo Picho. Agradecimientos a: Fabiola Torres, Jorge Miranda y Jimena Rodríguez.
 	    </p>
 	</div>
 </div>

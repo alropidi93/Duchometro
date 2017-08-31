@@ -45,8 +45,8 @@
 
 		border-right: 15px solid transparent;
 		border-bottom:  15px solid transparent;
-		border-left: 15px solid #a9a9a9;
-		border-top: 15px solid #a9a9a9;
+		border-left: 15px solid #9f9f9f;
+		border-top: 15px solid #9f9f9f;
 
 
 	}
@@ -104,6 +104,7 @@
 	.rank{
 		margin-left: 0;
 		width: 100%;
+		margin-top: 20%;
 	}
 
 	h1{
@@ -315,6 +316,7 @@
 
  .tab{
  	overflow: hidden;
+	margin-top: 19%;
  	margin-bottom: 30px;
  	margin-left: 10%;
  	margin-right: 10%;
@@ -326,7 +328,7 @@
 
 
 	margin-top: 0px;
- 	font-size: 40%;
+ 	font-size: 38%;
  	width: 50%;
  	height: 100px;
  	text-align: center;
@@ -343,7 +345,7 @@
 
 
  	margin-top: 0px;
- 	font-size:40%;
+ 	font-size:38%;
  	width: 50%;
  	height: 100px;
  	text-align: center;
@@ -745,8 +747,8 @@
 
 		border-right: 20px solid transparent;
 		border-bottom:  20px solid transparent;
-		border-left: 20px solid #a9a9a9;
-		border-top: 20px solid #a9a9a9;
+		border-left: 20px solid #9f9f9f;
+		border-top: 20px solid #9f9f9f;
 
 
 	}

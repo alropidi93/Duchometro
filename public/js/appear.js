@@ -27,7 +27,7 @@ $('#rank2').mouseover(function(){
 
 });
 $('#rank2').mouseout(function(){
-	document.getElementById("rank2").style.background="#a9a9a9";//volvemos al plomo normal
+	document.getElementById("rank2").style.background="#9f9f9f";//volvemos al plomo normal
 });
 
 $('#rank1').mouseover(function(){
@@ -43,20 +43,18 @@ $('#rank1').mouseout(function(){
 	//document.getElementById("rankOne").setAttribute("style","display:none");
 
 
-
-
+var stopFunction={};
 $('.calcular').click(function(e){
+	//console.log("diste click");
 
-	if (typeof animationD !== 'undefined'){
-		clearTimeout(animationD);
-		console.log("borro");
-	}
+
+
+
+
 	var id_district, minutes,name;
 	id_district=$(this).parent().parent().find('.sel').attr('id');
 	name=$(this).parent().parent().find('.sel').html();
   minutes=$("#minutes").val();
-
-
 
 
 	if (name=="Seleccionar"){
@@ -72,17 +70,22 @@ $('.calcular').click(function(e){
 		document.getElementById("field_required").innerHTML ="";
 		minutes=Number(minutes);
 		minutes=Math.round(minutes) ;
-		if (minutes <= 0 || minutes>=100 ){
+		if (minutes <= 0 || minutes>100 ){
 			$("#minutes").val("");
 			$("#minutes").attr('placeholder','Ingrese un valor válido');
 		}
 		else {
+
+
+
+			document.getElementById("calc").disabled = true;
 			document.getElementById("field_required").innerHTML ="";
+
+
 			$.ajax({
 			       url: "/reporte", //nueva url
 			       //url: "http://absortio.herokuapp.com/password/email",
 			       //headers: {'X-CSRF-TOKEN': $('[name="_token"]').val()},
-
 			       type:"GET",
 			       datatype:"json",
 			       data: {
@@ -97,11 +100,13 @@ $('.calcular').click(function(e){
 							 var count = 0;
 							 var ms = 100;
 							 var step = 5;
-							 var counter=setTimeout(timer, ms); //1000 will  run it every 1 second
+							 var counter=setTimeout(timer, 0); //1000 will  run it every 1 second
 							 var show, color;
 							 var countstep = 1;
+
 							 function timer()
 							 {
+								 document.getElementById("calc").disabled = true;
 							 	count=count+countstep;
 
 							 	if (countstep > 0 && count < data['litros'])
@@ -129,29 +134,17 @@ $('.calcular').click(function(e){
 							 	else
 									color = '#f7da19';//color amarillo
 
-							 	$('#temperature').html('<i class="fa fa-tint" aria-hidden="true"></i>'+show+"<span>Lts</span>").css('color',color) ; // watch for spelling
-								if (Number(show)==data['litros']) return;
+							 	$('#temperature').html('<i class="fa fa-tint" aria-hidden="true"></i>'+show+"<span>Litros</span>").css('color',color) ; // watch for spelling
+								if (Number(show)==data['litros']){
+
+									$(document).trigger('calcular_completed');
+									document.getElementById("calc").disabled = false;
+									return;
+								}
 								counter = setTimeout(timer, ms);
 							 }
-							 var icons=document.getElementsByTagName("i")
-							 var countDrop=0;
-							 animationDrop = function(){
 
 
-								 if (countDrop%2==0)
-								 		icons[0].style.display='none';
-								 else{
-
-									 icons[0].style.display='inline-block';
-								 }
-								 if (countDrop==100)
-								 		countDrop=0;
-								countDrop++;
-
-
-							 }
-
-							 var animationD=setInterval(animationDrop, 1000);
 
 
 							 //document.getElementById("min").innerHTML = data['min'] + " minutos";
@@ -175,6 +168,10 @@ $('.calcular').click(function(e){
 						 	});
 
 
+
+
+
+
 			       },
 
 			       error: function() {
@@ -184,6 +181,7 @@ $('.calcular').click(function(e){
 
 			          }
 			       });
+
 						 var objDiv = document.getElementById("divExample");
 
 
@@ -193,7 +191,35 @@ $('.calcular').click(function(e){
 
 	}
 
+
 });
+
+function triggerDrop() {
+	console.log("trigger activado");
+	clearInterval(stopFunction);
+    // second function code here
+		var icons=document.getElementsByTagName("i")
+							 var countDrop=0;
+							 animationDrop = function(){
+
+								 if (countDrop%2==0)
+								 		icons[0].style.display='none';
+								 else{
+
+									 icons[0].style.display='inline-block';
+								 }
+								 if (countDrop==100)
+								 		countDrop=0;
+								countDrop++;
+
+
+							 }
+
+
+							stopFunction=setInterval(animationDrop, 1000);
+}
+
+$(document).bind('calcular_completed', triggerDrop);
 
 function transitionTo(elem){
 

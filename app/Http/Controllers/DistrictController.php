@@ -139,7 +139,7 @@ class DistrictController extends Controller
 
         $message= "En ".$minutes." minutos has usado el "
                   .$porcLower."% del agua que utiliza, al día, un vecino de "
-                  .$districtLower['name'].", el distrito con menos horas de agua al día.";
+                  .$districtLower['name'].", el distrito con menos horas (solo dos) de agua al día.";
 
 
 
